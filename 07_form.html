@@ -57,26 +57,26 @@
     <h2>폼4번</h2>
     <form action="">
         <fieldset>
-            <legend>form4</legend>
+            <legend>상세검색</legend>
             <table>
-                <caption>form4</caption>
+                <caption>상세검색</caption>
                 <colgroup>
-                    <col style="width:177px;">
-                    <col style="width:;">
+                    <col style="width:177px;" />
+                    <col />
                 </colgroup>
                 <tbody>
                     <tr>
                         <th>분류</th>
                         <td>
-                            <input type="radio" name="" id="a"><label for="a">기념품</label>
-                            <input type="radio" name="" id="b"><label for="b">도서</label>
-                            <input type="radio" name="" id="c"><label for="c">배지</label>
-                            <input type="radio" name="" id="d"><label for="d">복식</label>
-                            <input type="radio" name="" id="e"><label for="e">시상품</label>
-                            <input type="radio" name="" id="f"><label for="f">증명서</label>
-                            <input type="radio" name="" id="g"><label for="g">label</label>
-                            <input type="radio" name="" id="h"><label for="h">포스터</label>
-                            <input type="radio" name="" id="i"><label for="i">기타</label>
+                            <input type="checkbox" name="" id="category1"><label for="category1">기념품</label>
+                            <input type="checkbox" name="" id="category2"><label for="category2">도서</label>
+                            <input type="checkbox" name="" id="category3"><label for="category3">배지</label>
+                            <input type="checkbox" name="" id="category4"><label for="category4">복식</label>
+                            <input type="checkbox" name="" id="category5"><label for="category5">시상품</label>
+                            <input type="checkbox" name="" id="category6" checked><label for="category6">증명서</label>
+                            <input type="checkbox" name="" id="category7"><label for="category7">label</label>
+                            <input type="checkbox" name="" id="category8"><label for="category8">포스터</label>
+                            <input type="checkbox" name="" id="category9"><label for="category9">기타</label>
                         </td>
                     </tr>
                     <tr>
@@ -85,7 +85,7 @@
                     </tr>
                     <tr>
                         <th>소장품번호</th>
-                        <td><input type="text" name="" id=""></td>
+                        <td><input type="number" name="" id=""></td>
                     </tr>
                     <tr>
                         <th>국적-시대</th>
@@ -100,28 +100,30 @@
                     </tr>
                     <tr>
                         <th>년대</th>
-                        <td><input type="text" name="" id="">YYYY</td>
+                        <td><input type="number" name="" id="">YYYY</td>
                     </tr>
                     <tr>
                         <th>입수처&기증자</th>
-                        <td><input type="search" name="" id=""></td>
+                        <td><input type="text" name="" id=""></td>
                     </tr>
                     <tr>
                         <th>공공누리</th>
                         <td>
-                            <input type="radio" name="" id="j"><label for="j">제1유형</label>
-                            <input type="radio" name="" id="k"><label for="k">제2유형</label>
-                            <input type="radio" name="" id="l"><label for="l">제3유형</label>
-                            <input type="radio" name="" id="m"><label for="m">제4유형</label>
-                            <input type="radio" name="" id="n"><label for="n">적용안함</label>
+                            <input type="checkbox" name="" id="type1"><label for="type1">제1유형</label>
+                            <input type="checkbox" name="" id="type2" checked><label for="type2">제2유형</label>
+                            <input type="checkbox" name="" id="type3"><label for="type3">제3유형</label>
+                            <input type="checkbox" name="" id="type4"><label for="type4">제4유형</label>
+                            <input type="checkbox" name="" id="type5"><label for="type5">적용안함</label>
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <button type="">초기화</button>
-            <button type="submit">초기화</button>
+            <button type="reset">초기화</button>
+            <button type="submit">전송</button>
         </fieldset>
     </form>
+
+
 
     <h2>공통속성</h2>
     <input type="text" value="입력된값" />
