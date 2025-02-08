@@ -1,0 +1,22 @@
+/* css nesting */
+.nesting {
+    a {
+        color: red;
+
+        span {
+            color: salmon;
+        }
+    }
+
+    .em {
+        color: green;
+    }
+}
+
+/*
+div > div {}
+div + div {}
+div:first-child{
+    div:hover{}
+}
+*/
