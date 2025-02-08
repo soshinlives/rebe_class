@@ -1,0 +1,22 @@
+html {
+    /* font-size: 62.5%; */
+    /*10px 기준*/
+    /* 100%=16px */
+    font-size: 100%;
+
+}
+
+body {
+    font-size: 1rem;
+}
+
+.text-outline {
+    font-family: "Noto Sans KR", serif;
+    font-size: 10rem;
+    color: #000;
+    font-weight: 900;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: red;
+    paint-order: stroke fill;
+    color: white;
+}
