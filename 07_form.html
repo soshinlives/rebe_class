@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온라인서식</title>
+</head>
+
+<body>
+    <h2>폼</h2>
+    <form action="">
+        <fieldset>
+            <legend>게시물검색</legend>
+            <select name="" id="">
+                <option value="">제목</option>
+            </select>
+            <input type="search" name="" id="" placeholder="검색어 입력해주세요">
+            <button type="submit">검색</button>
+        </fieldset>
+    </form><br><br>
+
+    <h2>폼8번</h2>
+    <ul>
+        <li>
+            <strong>담당부서</strong>
+            <div>경영지원실</div>
+        </li><br>
+        <li>
+            <strong>뷰어다운</strong>
+            <div>
+                <img src="./images/image32-1.svg" alt="">😀한글뷰어
+                <img src="./images/image32-2.svg" alt="">😀한글뷰어
+            </div>
+        </li><br>
+        <li>
+            <strong>페이지의 내용이나 사용편의성에 대해 만족하십니까?</strong>
+            <form action="">
+                <fieldset>
+                    <legend>만족도조사</legend>
+                    <div>
+                        😀<input type="radio" name="" id="">매우만족
+                        🥲<input type="radio" name="" id="">만족
+                        😚<input type="radio" name="" id="">보통
+                        😝<input type="radio" name="" id="">불만족
+                        😌<input type="radio" name="" id="">매우불만족
+                    </div>
+                    <input type="search" name="" id="" placeholder="여러분의 소중한 의견을 보내주세요">
+                    <button type="button">입력</button>
+                </fieldset>
+            </form>
+        </li><br>
+    </ul>
+    <h2>공통속성</h2>
+    <input type="text" value="입력된값" />
+    <input type="radio" name="" id="" value="데이터전달값" /><br>
+    <div>이름</div>
+    <input type="text" name="" id="" placeholder="이름을 입력해주세요" /><br>
+    <form action="">
+        <input type="text" name="" id="" required /><br>
+        <input type="email" name="" id="" required /><br>
+        <button>전송</button>
+    </form><br /><br />
+    <input type="text" disabled value="작성됨">비활성<br />
+    <input type="text" readonly value="작성됨">읽기전용<br />
+    <br /><br /><br />
+
+    <input type="text" name="" id="" autofocus>초점이동<br />
+    <form action="">
+        <input type="text" name="" id="" minlength="5" maxlength="10" required>최소/최대 글자수
+        <button>전송</button>
+    </form>
+    <input type="number" name="" id="" min="0" max="10" /><br />
+    <input type="date" name="" id="" min="2025-02-08" max="2025-02-21" />
+    <form>
+        <fieldset>
+            <legend>제목</legend>
+            <ul>
+                <li><input type="text" />한줄 글상자</li>
+                <li><input type="password" name="" id="" />암호화된 글상자</li>
+                <li><input type="file" name="" id="" />첨부파일</li>
+                <li><input type="url" name="" id="" />주소입력</li>
+                <li><input type="email" name="" id="" />이메일입력</li>
+                <li><input type="number" name="" id="" />숫자입력</li>
+                <li><input type="tel" name="" id="" />전화번호</li>
+                <li><input type="search" name="" id="" />검색어 입력</li>
+                <li><input type="date" name="" id="" />달력</li>
+                <li><textarea name="" id="" cols="10" rows="5">여러줄입력상자</textarea></li>
+                <li><input type="range" name="" id=""></li>
+                <li><progress></progress></li>
+                <li><input type="color" name="" id="">색상선택</li>
+                <li><button type="button">범용버튼(기능을위한것)</button></li>
+                <li><button type="submit">전송버튼</button></li>
+                <li><button type="reset">범용버튼</button></li>
+                <li><button>전송버튼</button></li>
+                <li><select name="" id="">
+                        <option value="">선택하세요1</option>
+                        <option value="number1">0100q439008439483430</option>
+                        <option value="number1">100</option>
+                        <option value="number1">200</option>
+                        <option value="number1">300</option>
+                    </select>
+                </li>
+                <li><select name="" id="" multiple>
+                        <option value="">선택하세요2</option>
+                        <option value="number1">0100q439008439483430</option>
+                        <option value="number1">100</option>
+                        <option value="number1">200</option>
+                        <option value="number1">300</option>
+                    </select>
+                </li>
+                <li><select name="" id="">
+                        <optgroup label="선택그룹1">
+                            <option value="">선택하세요</option>
+                            <option value="number1">100</option>
+                            <option value="number1">200</option>
+                            <option value="number1">300</option>
+                        </optgroup>
+                        <optgroup label="선택그룹2">
+                            <option value="">선택하세요</option>
+                            <option value="number1">100</option>
+                            <option value="number1">200</option>
+                            <option value="number1">300</option>
+                        </optgroup>
+                    </select>
+                </li>
+                <li>
+                    <input type="radio" name="group" id="a"><label for="a">선택1</label><br />
+                    <input type="radio" name="group" id="b"><label for="b">선택2</label></label>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="c" /><label for="c">선택1</label><br />
+                    <input type="checkbox" name="" id="d" /><label for="d">선택2</label><br />
+                    <input type="checkbox" name="" id="e" /><label for="e">선택3</label><br />
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+
+</html>
