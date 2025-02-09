@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>숙제-form</title>
+    </head>
+
+    <body>
+        <h2>표1번</h2>
+        <ul>
+            <li>
+                <img src="./images/logo.png" alt="로고">
+            </li>
+            <li>아트앤컬처</li>
+            <li>교과서 자료실</li>
+            <li>작품 감상실</li>
+            <li>포트폴리오</li>
+            <li>고객센터</li>
+            <li>로그인</li>
+            <li><img src="./images/search.svg" alt="검색"></li>
+        </ul>
+        <div>
+            <div>
+                <img src="./images/paint.png" alt="페인트">
+            </div>
+            <div>
+                <h3>회원가입</h3>
+                <p>이미 계정이 있으신가요?<a href="">로그인</a></p>
+                <form>
+                    <fieldset>
+                        <legend>회원가입</legend>
+                        <h4>가입 정보 입력</h4>
+                        <label for="">아이디</label><input type="text">
+                        <button type="button">중복확인</button>
+                        <label for="">비밀번호</label><input type="password">
+                        <label for="">비밀번호 확인<input type="password"></label>
+
+                        <h4>계정 정보 입력</h4>
+                        <label for="">이름</label><input type="text" name="" id="">
+                        <label for="">이메일</label><input type="email" name="" id="">
+
+                        <h4>계정 정보 입력</h4>
+                        <div>
+                            <input type="checkbox" name="" id="personal"><label for="personal">개인정보처리방침</label>
+                            <button type="button">전문보기</button>
+                        </div>
+
+                        <button type="button">취소하기</button>
+                        <button type="submit">가입하기</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div><br><br><br><br>
+
+        <h2>표3번</h2>
+        <ul>
+            <form>
+                <fieldset>
+                    <legend>문의하기</legend>
+                    <li>
+                        <span>문의 유형<span>*</span></span>
+                        <select name="" id="" required>
+                            <option value="">선택</option>
+                            <option value="">선택1</option>
+                            <option value="">선택2</option>
+                        </select>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <span>산업군<span>*</span></span>
+                                <select name="" id="" required>
+                                    <option value="">1차 산업군</option>
+                                    <option value="">A</option>
+                                    <option value="">B</option>
+                                </select>
+                                <select name="" id="" required>
+                                    <option value="">2차 산업군</option>
+                                    <option value="">A</option>
+                                    <option value="">B</option>
+                                </select>
+                                <select name="" id="" required>
+                                    <option value="">3차 산업군</option>
+                                    <option value="">A</option>
+                                    <option value="">B</option>
+                                </select>
+                            </li>
+                            <li>
+                                <span>제품군</span>
+                                <select name="" id="">
+                                    <option value="">대분류</option>
+                                    <option value="">A</option>
+                                    <option value="">B</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">중분류</option>
+                                    <option value="">A</option>
+                                    <option value="">B</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><label for="">성<span>*</span></label><input type="text" name="" id="" placeholder="성 입력"
+                                    required></li>
+                            <li><label for="">이름<span>*</span></label><input type="text" name="" id=""
+                                    placeholder="이름 입력" required></li>
+                            <li><label for="">성별</label>
+                                <input type="radio" name="gender" id="male"><label for="male">남자</label>
+                                <input type="radio" name="gender" id="female"><label for="female">여자</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <label for="">이메일<span>*</span></label>
+                                <input type="email" placeholder="이메일 입력" required>
+                            </li>
+                            <li>
+                                <label for="">연락처<span>*</span></label>
+                                <label for="">연락처</label><input type="tel" name="" id="" placeholder="연락처 입력" required>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <label for="">회사명<span>*</span></label><input type="text" name="" id=""
+                                    placeholder="회사명 입력" required>
+                            </li>
+                            <li>
+                                <label for="">직급<span>*</span></label><input type="text" name="" id=""
+                                    placeholder="직급 입력" required>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="">제목 <span>*</span></label>
+                        <input type="text" name="" id="" placeholder="제목 입력" required>
+                    </li>
+                    <li>
+                        <label for="">문의내용</label>
+                        <textarea name="" id="" placeholder="문의 내용 입력" required></textarea>
+                    </li>
+                    <button type="button">취소하기</button>
+                    <button type="submit">전송하기</button>
+                </fieldset>
+            </form>
+        </ul>
+        <br><br><br><br>
+
+        <h2>표5번</h2>
+        <p>관심 제품을 직접 체험하고 적합한 서비스 형태를 제안 받아보세요.
+            이메일 혹은 전화로 담당자가 안내를 드립니다.</p>
+        <form>
+            <fieldset>
+                <legend>문의하기</legend>
+                <table class="inquiry">
+                    <caption>문의하기</caption>
+                    <colgroup>
+                        <col style="width:151px;">
+                        <col style="">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>문의 유형 및 관심제품을 선택해주세요.</th>
+                            <td>
+                                <h3>문의유형</h3>
+                                <select name="" id="">
+                                    <option value="">문의 유형을 선택해주세요</option>
+                                    <option value="">유형1</option>
+                                    <option value="">유형2</option>
+                                </select>
+                                <h3>관심 및 문의 제품</h3>
+                                <ul>
+                                    <li><input type="checkbox" name="" id="prd1"><label for="prd1">ID FILTER</label>
+                                    </li>
+                                    <li><input type="checkbox" name="" id="prd2"><label for="prd2">SERVER FILTER</label>
+                                    </li>prd
+                                    <li><input type="checkbox" name="" id="prd3"><label for="prd3">WEB FILTER</label>
+                                    </li>
+                                    <li><input type="checkbox" name="" id="prd4"><label for="prd4">ID FILTER</label>
+                                    </li>
+                                    <li><input type="checkbox" name="" id="prd5"><label for="prd5">AI FILTER</label>
+                                    </li>
+                                    <li><input type="checkbox" name="" id="prd6"><label for="prd6">KIOSK FILTER</label>
+                                    </li>
+                                    <li><input type="checkbox" name="" id="prd7"><label for="prd7">나라웍스</label></li>
+                                    <li><input type="checkbox" name="" id="prd8"><label for="prd8">모든제품</label></li>
+                                    <li><input type="checkbox" name="" id="prd9"><label for="prd9">기타</label></li>
+                                </ul>
+                                <h3>서비스형태</h3>
+                                <ul>
+                                    <li><input type="radio" name="servicetype" id="cloud" checked><label
+                                            for="cloud">클라우드형</label>
+                                    </li>
+                                    <li><input type="radio" name="servicetype" id="build"><label for="build">구축형</label>
+                                    </li>
+                                    <li><input type="radio" name="servicetype" id="usb"><label for="usb">USB형</label>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>기본정보를 입력해주세요.</th>
+                            <td>
+                                <h3>기본정보</h3>
+                                <input type="text" name="" id="" placeholder="회사명을 입력해주세요.">
+                                <select name="" id="">
+                                    <option value="">회사지역을 선택해주세요.</option>
+                                    <option value="">회사지역1</option>
+                                    <option value="">회사지역2</option>
+                                </select>
+                                <input type="text" name="" id="" placeholder="이름(담당자명)을 입력해주세요.">
+                                <input type="text" name="" id="" placeholder="직함을 입력해주세요.">
+                                <input type="text" name="" id="" placeholder="회사규모를 입력해주세요.(ex. 100인 이하)">
+                                <input type="tel" name="" id="" placeholder="연락처를 입력해주세요.">
+                                <input type="email" name="" id="" placeholder="이메일을 입력해주세요.">
+                                <select name="" id="">
+                                    <option value="">방문경로를 선택해주세요.</option>
+                                    <option value="">방문경로1</option>
+                                    <option value="">방문경로2</option>
+                                    <option value="">방문경로3</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>문의내용을 작성해주세요.</th>
+                            <td>
+                                <h3>문의내용</h3>
+                                <textarea name="" id=""
+                                    placeholder="궁금하신 점을 자세히 적어 주실수록 자세한 상담이 가능합니다. 소개서 요청/기술지원 제품명/문의 사항 등을 남겨주세요."
+                                    minlength="5" maxlength="100"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="reset">초기화하기</button>
+                <button type="submit">제출하기</button>
+            </fieldset>
+        </form>
+
+        <h2>표7번</h2>
+        <h3>온라인 신고하기</h3>
+        <h4>개인정보 수집·이용 동의</h4>
+        <p>제품 및 서비스 불만접수를 위하여 아래의 개인정보 수집∙이용에 대한 내용을 자세히 읽어 보신 후 동의 여부를 결정하여 주시기 바랍니다.</p>
+
+        <form>
+            <fieldset>
+                <legend>온라인 신고하기</legend>
+                <ol>
+                    <li>개인정보의 수집 이용목적 : 상담 처리 및 처리 결과 회신</li>
+                    <li>개인정보 수집항목<br>
+                        <span>1.필수항목 : 이름, 전화번호</span><br>
+                        <span>2.선택항목 : 이메일</span></li>
+                    </li>
+                    <li>개인정보의 보유 및 이용기간 : 상담 처리 및 처리 결과 회신 후 3개월까지</li>
+                    <li>상담자는 위와 같은 개인정보 제공을 거부할 권리가 있으며, 부과되는 불이익은 없으나 상담의 적기 처리가 지연될 수는 있습니다.</li>
+                </ol>
+                <ul>
+                    <li>필수항목 *
+                        <input type="radio" name="essence1" id="agree1" required><label for="agree1">동의함</label>
+                        <input type="radio" name="essence1" id="disagree1" required><label
+                            for="disagree1">동의하지않음</label>
+                    </li>
+                    <li>선택항목
+                        <input type="radio" name="essence2" id="agree2"><label for="agree2">동의함</label>
+                        <input type="radio" name="essence2" id="disagree2"><label for="disagree2">동의하지않음</label>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <h4>관계사<span>*</span></h4>
+                        <select name="" id="" required>
+                            <option value="">관계 선택</option>
+                            <option value="">관계사1</option>
+                            <option value="">관계사2</option>
+                            <option value="">관계사3</option>
+                        </select>
+                    </li>
+                    <li>
+                        <h4>이름<span>*</span></h4>
+                        <input type="text" name="" id="" placeholder="이름을 입력하세요.">
+                    </li>
+                    <li>
+                        <h4>이메일<span>*</span></h4>
+                        <input type="text" name="" id="" placeholder="이메일">
+                        <span>@</span>
+                        <input type="text" name="" id="" placeholder="도메인">
+                        <select name="" id="">
+                            <option value="">선택</option>
+                            <option value="">gmail.com</option>
+                            <option value="">abc.com</option>
+                            <option value="">naver.com</option>
+                        </select>
+                    </li>
+                    <li>
+                        <h4>내용<span>*</span></h4>
+                        <textarea name="" id="" placeholder="내용을 입력하세요. (최대 1,000자까지 입력가능합니다.)" minlength="1"
+                            maxlength="1000"></textarea>
+                    </li>
+                </ul>
+                <button type="button">취소하기</button>
+                <button type="submit">제출하기</button>
+            </fieldset>
+        </form><br><br><br>
+
+        <h2>표11번</h2>
+        <h3>채용, 시작부터 선발까지 Agile하게
+            <span>INCRUIT WORKS</span>
+        </h3>
+
+        <div>
+            <form>
+                <fieldset>
+                    <legend>Log in</legend>
+                    <input type="text" name="" id="" placeholder="ID를 입력해주세요.">
+                    <input type="password" placeholder="비밀번호를 입력해주세요.">
+                    <button type="submit">로그인</button><br>
+                    <span>
+                        <a href="">아이디 찾기</a>
+                        <span>|</span>
+                        <a href="">비밀번호 찾기</a>
+                        <span>|</span>
+                        <a href="">회원가입</a>
+                    </span>
+                    <p><img src="./images/envelope.svg" alt="이메일">INCRUITWORKS@INCRUIT.COM</p>
+                </fieldset>
+            </form>
+        </div>
+        <p>copyright©Incruit Corporation. All rights reserved.</p>
+
+        <h2>표13번</h2>
+        <h3>도입문의 및 데모 신청</h3>
+        <form>
+            <fieldset>
+                <legend>도입문의 및 데모 신청</legend>
+                <h4>요청사항<span>*</span></h4>
+                <input type="checkbox" name="ask" id="free1" checked><label for="free1">무료체험 신청</label>
+                <input type="checkbox" name="ask" id="free2"><label for="free2">도입문의</label>
+                <input type="checkbox" name="ask" id="free3"><label for="free3">서비스소개서 신청</label>
+
+                <h4>회사명<span>*</span></h4>
+                <input type="text" name="" id="" placeholder="회사명을 입력해 주세요" required>
+
+                <h4>부서명<span>*</span></h4>
+                <input type="text" name="" id="" placeholder="부서명을 입력해 주세요" required>
+
+                <h4>이름<span>*</span></h4>
+                <input type="text" name="" id="" placeholder="이름을 입력해 주세요" required>
+
+                <h4>연락처<span>*</span></h4>
+                <input type="tel" name="" id="" placeholder="연락처를 입력해 주세요" required>
+
+                <h4>이메일<span>*</span></h4>
+                <input type="tel" name="" id="" placeholder="이메일을 입력해 주세요" required>
+
+                <h4>홈페이지</h4>
+                <input type="tel" name="" id="" placeholder="회사 홈페이지 주소를 입력해 주세요">
+
+                <div>
+                    <h5>개인정보 수집 및 이용 안내</h5>
+                    <ul>
+                        <li>• 수집항목:(필수)회사명,부서명,이름,연락처,이메일,(선택)홈페이지 주소</li>
+                        <li>• 수집목적:인크루트웍스 도입 상담 진행, 데모 계정 발급과 솔루션 업데이트 소식 및 뉴스레터 발송</li>
+                        <li>• 이용기간:개인정보 이용 목적 달성 시 까지</li>
+                        <li>※위의 개인정보 수집·이용 동의를 거부하실 수 있으며, 거부 시위 서비스 이용에 제한이 있을 수 있습니다.</li>
+                    </ul>
+                </div>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="" id="iagree1" required><label for="iagree1">개인정보 수집 및 이용에
+                            동의합니다.(필수)</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="iagree2"><label for="iagree2">데모신청 및 솔루션 업데이트소식, 뉴스레터 수신에
+                            동의합니다.(선택)</label>
+                    </li>
+                </ul>
+                <button type="submit">문의 및 신청</button>
+            </fieldset>
+        </form>
+
+    </body>
+
+    </html>
