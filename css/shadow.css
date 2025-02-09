@@ -1,0 +1,20 @@
+.shadow {
+    width: 200px;
+    aspect-ratio: 1;
+    border: 2px solid sandybrown;
+    box-shadow: 3px 3px 5px silver, inset 10px 12px 7px 9px silver;
+}
+
+.text-shadow {
+    font-size: 4rem;
+    font-family: "Noto Sans KR", serif;
+    font-weight: 800;
+    text-shadow: 0 0 0 black;
+    transition: 0.4s;
+
+    &:hover {
+        text-shadow: 2px 2px 0 red, 4px 4px 0 orange, 6px 6px 0 yellow, 8px 8px 0 greenyellow, 10px 10px 0 blue, 12px 12px 0 darkblue, 14px 14px 0 purple;
+    }
+}
+
+.radius {}

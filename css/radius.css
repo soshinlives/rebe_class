@@ -1,0 +1,20 @@
+.radius {
+    width: 200px;
+    aspect-ratio: 1;
+    border: 2px solid #000;
+    border-radius: 10px 20px 30px 40px;
+}
+
+.circle1 {
+    width: 200px;
+    aspect-ratio: 1;
+    border: 2px solid #000;
+    border-radius: 1000px;
+}
+
+.circle2 {
+    width: 200px;
+    aspect-ratio: 3;
+    border: 2px solid #000;
+    border-radius: 50%;
+}

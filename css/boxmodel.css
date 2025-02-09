@@ -1,0 +1,61 @@
+.box1 {
+    width: 200px;
+    aspect-ratio: 1;
+    border: 2px solid red;
+    /* padding: 20px 10px 5px 1px; */
+    /* 선안으로 위/아래 */
+    /* margin: 20px 10px 5px 1px; */
+    /* padding-inline: 10px 20px;
+    padding-block: 20px 30px; */
+    padding: 10px;
+    /* 패딩으로 처리하면 박스 자체 영역이 커짐.*/
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.box2 {
+    width: 200px;
+    aspect-ratio: 1;
+    margin-top: 10px;
+    /*더블 마진 오류, 무조건 숫자가 큰 쪽으로 적용된다. 우선순위가 높다. */
+    border: 2px solid blue;
+    border-top: 1px solid #000;
+    border-right: 2px dashed orange;
+    border-bottom: 3px dotted saddlebrown;
+    border-left: 4px double #000;
+}
+
+/* .box3 {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-width: 100px;
+    background-color: aquamarine;
+    border-style: solid;
+    border-color: red blue orange saddlebrown;
+} */
+
+.box3 {
+    width: 50px;
+    box-sizing: border-box;
+    border-width: 50px;
+    border-style: solid;
+    border-color: transparent transparent orange transparent;
+}
+
+/* * {
+    box-sizing: border-box;
+} */
+
+/*
+
+ 언제 margin과 padding을 줘야할까?
+선밖은 margin
+선안쪽은 padding
+
+배경색 또는 배경이미지 밖은 margin
+배경색 또는 배경이미지 안쪽은 padding
+
+margin을 줄때에는 반드시 한방향으로 줘야 한다.
+
+*/

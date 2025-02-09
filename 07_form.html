@@ -20,8 +20,9 @@
         </fieldset>
     </form><br><br>
 
-    <input type="radio" name="" id="mail"><label for="mail">이메일</label>
-    <input type="radio" name="" id="mail2"><label for="mail2">이메일2</label>
+    <input type="radio" name="group" id="mail"><label for="mail">이메일</label>
+    <input type="radio" name="group" id="mail2"><label for="mail2">이메일2</label>
+    <br><br><br>
 
 
     <h2>폼8번</h2>
@@ -50,13 +51,13 @@
                         😝<input type="radio" name="group" id="d"><label for="d">불만족</label>
                         🤪<input type="radio" name="group" id="e"><label for="e">매우불만족</label>
                     </div>
-                    <input type="search" name="" id="" placeholder="여러분의 소중한 의견을 보내주세요">
+                    <input type="search" name="" id="" placeholder="여러분의 소중한 의견을 보내주세요" style="width: 240px;"><br><br>
                     <button type="reset">초기화</button>
                     <button type="submit">입력</button>
                 </fieldset>
             </form>
         </li>
-    </ul>
+    </ul><br><br><br>
 
     <h2>폼4번</h2>
     <form action="">
@@ -72,15 +73,16 @@
                     <tr>
                         <th>분류</th>
                         <td>
-                            <input type="checkbox" name="" id="category1"><label for="category1">기념품</label>
-                            <input type="checkbox" name="" id="category2"><label for="category2">도서</label>
-                            <input type="checkbox" name="" id="category3"><label for="category3">배지</label>
-                            <input type="checkbox" name="" id="category4"><label for="category4">복식</label>
-                            <input type="checkbox" name="" id="category5"><label for="category5">시상품</label>
-                            <input type="checkbox" name="" id="category6" checked><label for="category6">증명서</label>
-                            <input type="checkbox" name="" id="category7"><label for="category7">label</label>
-                            <input type="checkbox" name="" id="category8"><label for="category8">포스터</label>
-                            <input type="checkbox" name="" id="category9"><label for="category9">기타</label>
+                            <input type="checkbox" name="group" id="category1"><label for="category1">기념품</label>
+                            <input type="checkbox" name="group" id="category2"><label for="category2">도서</label>
+                            <input type="checkbox" name="group" id="category3"><label for="category3">배지</label>
+                            <input type="checkbox" name="group" id="category4"><label for="category4">복식</label>
+                            <input type="checkbox" name="group" id="category5"><label for="category5">시상품</label>
+                            <input type="checkbox" name="group" id="category6" checked><label
+                                for="category6">증명서</label>
+                            <input type="checkbox" name="group" id="category7"><label for="category7">label</label>
+                            <input type="checkbox" name="group" id="category8"><label for="category8">포스터</label>
+                            <input type="checkbox" name="group" id="category9"><label for="category9">기타</label>
                         </td>
                     </tr>
                     <tr>
@@ -94,8 +96,9 @@
                     <tr>
                         <th>국적-시대</th>
                         <td>
-                            <select name="" id="">
-                                <option value="">선택</option>
+                            <select>
+                                <option value="">선택1</option>
+                                <option value="">선택2</option>
                             </select>
                             <select name="" id="">
                                 <option value="">선택</option>
@@ -104,7 +107,7 @@
                     </tr>
                     <tr>
                         <th>년대</th>
-                        <td><input type="number" name="" id="">YYYY</td>
+                        <td><input type="number" name="" id="" min="0">YYYY</td>
                     </tr>
                     <tr>
                         <th>입수처&기증자</th>
@@ -127,19 +130,21 @@
         </fieldset>
     </form>
 
-
-
     <h2>공통속성</h2>
     <input type="text" value="입력된값" />
-    <input type="radio" name="" id="" value="데이터전달값" /><br>
+    <input type="radio" name="" id="dataa" value="데이터전달값" />
+    <label for="dataa">데이터</label><br>
+
     <div>이름</div>
     <input type="text" name="" id="" placeholder="이름을 입력해주세요" /><br>
+
     <form action="">
-        <input type="text" name="" id="" required /><br>
-        <input type="email" name="" id="" required /><br>
+        <input type="text" name="" id="" placeholder="text" required /><br>
+        <input type="email" name="" id="" placeholder="email" /><br>
         <button>전송</button>
     </form><br /><br />
-    <input type="text" disabled value="작성됨">비활성<br />
+
+    <input type="text" disabled value="작성되었지만 비활성">비활성<br />
     <input type="text" readonly value="작성됨">읽기전용<br />
     <br /><br /><br />
 
@@ -168,12 +173,15 @@
                 <li><progress></progress></li>
                 <li><input type="color" name="" id="">색상선택</li>
                 <li><button type="button">범용버튼(기능을위한것)</button></li>
+                <!--팝업창띄거나 페이지이동, 기능 실행이지 전송의 방식은 아님 -->
                 <li><button type="submit">전송버튼</button></li>
+                <!--그냥 버튼이라고 해도된다. -->
                 <li><button type="reset">초기화</button></li>
                 <li><button>전송버튼</button></li>
+                <!--submit과 동일하다. 그냥버튼은 기본이 서브밋이다. -->
                 <li><select name="" id="">
                         <option value="">선택하세요1</option>
-                        <option value="number1">0100q439008439483430</option>
+                        <option value="number1">01038383838</option>
                         <option value="number1">100</option>
                         <option value="number1">200</option>
                         <option value="number1">300</option>
@@ -187,6 +195,7 @@
                         <option value="number1">300</option>
                     </select>
                 </li>
+                <!--기본이 열려있어야한다. 멀티플은-->
                 <li><select name="" id="">
                         <optgroup label="선택그룹1">
                             <option value="">선택하세요</option>

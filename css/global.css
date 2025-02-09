@@ -1,3 +1,6 @@
 /* @import url(./spec.css); */
 @import url(./nesting.css);
 @import url(./font.css);
+@import url(./boxmodel.css);
+@import url(./shadow.css);
+@import url(./radius.css);
