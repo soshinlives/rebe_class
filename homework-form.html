@@ -122,7 +122,7 @@
                             </li>
                             <li>
                                 <label for="">연락처<span>*</span></label>
-                                <label for="">연락처</label><input type="tel" name="" id="" placeholder="연락처 입력" required>
+                                <input type="tel" name="" id="" placeholder="연락처 입력" required>
                             </li>
                         </ul>
                     </li>
@@ -139,11 +139,11 @@
                         </ul>
                     </li>
                     <li>
-                        <label for="">제목 <span>*</span></label>
+                        <label for="">제목<span>*</span></label>
                         <input type="text" name="" id="" placeholder="제목 입력" required>
                     </li>
                     <li>
-                        <label for="">문의내용</label>
+                        <label for="">문의내용<span>*</span></label>
                         <textarea name="" id="" placeholder="문의 내용 입력" required></textarea>
                     </li>
                     <button type="button">취소하기</button>
@@ -285,33 +285,42 @@
                     </li>
                     <li>
                         <h4>이름<span>*</span></h4>
-                        <input type="text" name="" id="" placeholder="이름을 입력하세요.">
+                        <input type="text" name="" id="" placeholder="이름을 입력하세요." required>
+                    </li>
+                    <li>
+                        <h4>전화번호<span>*</span></h4>
+                        <input type="tel" name="" id="" placeholder="-없이 숫자만 입력하세요." required>
                     </li>
                     <li>
                         <h4>이메일<span>*</span></h4>
-                        <input type="text" name="" id="" placeholder="이메일">
+                        <input type="text" name="" id="" placeholder="이메일" required>
                         <span>@</span>
-                        <input type="text" name="" id="" placeholder="도메인">
+                        <input type="text" name="" id="" placeholder="도메인" required>
                         <select name="" id="">
                             <option value="">선택</option>
                             <option value="">gmail.com</option>
                             <option value="">abc.com</option>
                             <option value="">naver.com</option>
                         </select>
+                        <p><img src="./images/help.svg" alt="헬프">이메일을 입력 하지 않으면 답변을 받을 수 없습니다.</p>
+                    </li>
+                    <li>
+                        <h4>제목<span>*</span></h4>
+                        <input type="text" name="" id="" placeholder="제목을 입력하세요." required>
                     </li>
                     <li>
                         <h4>내용<span>*</span></h4>
                         <textarea name="" id="" placeholder="내용을 입력하세요. (최대 1,000자까지 입력가능합니다.)" minlength="1"
-                            maxlength="1000"></textarea>
+                            maxlength="1000" required></textarea>
                     </li>
                 </ul>
-                <button type="button">취소하기</button>
-                <button type="submit">제출하기</button>
+                <button type="button">취소</button>
+                <button type="submit">접수</button>
             </fieldset>
         </form><br><br><br>
 
         <h2>표11번</h2>
-        <h3>채용, 시작부터 선발까지 Agile하게
+        <h3>채용, 시작부터 선발까지 Agile하게<br>
             <span>INCRUIT WORKS</span>
         </h3>
 
@@ -319,8 +328,9 @@
             <form>
                 <fieldset>
                     <legend>Log in</legend>
-                    <input type="text" name="" id="" placeholder="ID를 입력해주세요.">
-                    <input type="password" placeholder="비밀번호를 입력해주세요.">
+                    <input type="text" name="" id="" placeholder="ID를 입력해주세요."><img src="./images/person2.svg"
+                        alt="아이디">
+                    <input type="password" placeholder="비밀번호를 입력해주세요."><img src="./images/key.svg" alt="비밀번호">
                     <button type="submit">로그인</button><br>
                     <span>
                         <a href="">아이디 찾기</a>
@@ -333,7 +343,7 @@
                 </fieldset>
             </form>
         </div>
-        <p>copyright©Incruit Corporation. All rights reserved.</p>
+        <p>copyright©Incruit Corporation. All rights reserved.</p><br><br><br><br>
 
         <h2>표13번</h2>
         <h3>도입문의 및 데모 신청</h3>
