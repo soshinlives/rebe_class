@@ -40,18 +40,24 @@
                     <fieldset>
                         <legend>회원가입</legend>
                         <strong>가입 정보 입력</strong>
-                        <label for="ID">아이디</label><input type="text" name="" id="ID">
+                        <label for="user-id">아이디</label>
+                        <input type="text" name="user-id" id="user-id">
                         <button type="button">중복확인</button>
-                        <label for="password">비밀번호</label><input type="password" name="" id="password">
-                        <label for="password_confirm">비밀번호 확인</label><input type="password" name=""
-                            id="password_confirm">
-                        <strong>계정 정보 입력</strong>
-                        <label for="">이름</label><input type="text" name="" id="">
-                        <label for="">이메일</label><input type="email" name="" id="">
+                        <label for="user-password">비밀번호</label>
+                        <input type="password" name="user-password" id="user-password">
+                        <label for="password-confirm">비밀번호 확인</label>
+                        <input type="password" name="password-confirm" id="password-confirm">
 
                         <strong>계정 정보 입력</strong>
+                        <label for="member-name">이름</label>
+                        <input type="text" name="member-name" id="member-name">
+                        <label for="member-email">이메일</label>
+                        <input type="email" name="member-email" id="member-email">
+
+                        <strong>약관동의</strong>
                         <div>
-                            <input type="checkbox" name="" id="personal"><label for="personal">개인정보처리방침</label>
+                            <input type="checkbox" name="privacy-policy" id="privacy-policy">
+                            <label for="privacy-policy">개인정보처리방침</label>
                             <button type="button">전문보기</button>
                         </div>
 
@@ -68,12 +74,12 @@
             <form action="">
                 <fieldset>
                     <legend>게시물검색</legend>
-                    <select name="" id="">
+                    <select name="" id="search-type">
                         <option value="">제목</option>
                         <option value="">제목2</option>
                         <option value="">제목3</option>
                     </select>
-                    <input type="search" name="" id="" placeholder="검색어를 입력해 주세요.">
+                    <input type="search" name="search-keyword" id="search-keyword" placeholder="검색어를 입력해 주세요.">
                     <button type="submit">검색</button>
                 </fieldset>
             </form>
@@ -97,35 +103,35 @@
             <tbody>
                 <tr>
                     <td>공지</td>
-                    <td><a href="">[채용공고] 채권운용본부 크레딧애널리스트 경력직 채용</a></td>
-                    <td><a href=""><img src="./images/download.svg" alt="다운로드"></a></td>
-                    <td><a href="">2024-04-19</a></td>
+                    <td><a href="#">[채용공고] 채권운용본부 크레딧애널리스트 경력직 채용</a></td>
+                    <td><a href="#"><img src="./images/download.svg" alt="다운로드"></a></td>
+                    <td><a href="#">2024-04-19</a></td>
                 </tr>
                 <tr>
                     <td>공지</td>
-                    <td><a href="">[채용공고] 채권운용본부 크레딧애널리스트 경력직 채용</a></td>
-                    <td><a href=""><img src="./images/download.svg" alt="다운로드"></a></td>
-                    <td><a href="">2024-04-19</a></td>
+                    <td><a href="#">[채용공고] 채권운용본부 크레딧애널리스트 경력직 채용</a></td>
+                    <td><a href="#"><img src="./images/download.svg" alt="다운로드"></a></td>
+                    <td><a href="#">2024-04-19</a></td>
                 </tr>
                 <tr>
                     <td>공지</td>
-                    <td><a href="">[채용공고] 채권운용본부 크레딧애널리스트 경력직 채용</a></td>
-                    <td><a href=""><img src="./images/download.svg" alt="다운로드"></a></td>
-                    <td><a href="">2024-04-19</a></td>
+                    <td><a href="#">[채용공고] 채권운용본부 크레딧애널리스트 경력직 채용</a></td>
+                    <td><a href="#"><img src="./images/download.svg" alt="다운로드"></a></td>
+                    <td><a href="#">2024-04-19</a></td>
                 </tr>
             </tbody>
         </table>
         <div>
-            <a href="">더보기<strong>(10/488)</strong>
+            <a href="#">더보기<strong>(10/488)</strong>
                 <img src="./images/arrowdown.svg" alt="다운로드"></a>
         </div>
         <br><br><br><br>
 
         <h2>form 3번-수정함/div로 감싸서 수정</h2>
-        <ul>
-            <form>
-                <fieldset>
-                    <legend>문의하기</legend>
+        <form>
+            <fieldset>
+                <legend>문의하기</legend>
+                <ul>
                     <li>
                         <label for="inquiry-type">
                             문의 유형<span>*</span>
@@ -170,15 +176,20 @@
                         </div>
                     </li>
                     <li>
-                        <div><label for="lastname">성<span>*</span></label>
-                            <input type="text" name="" id="lastname" placeholder="성 입력" required>
+                        <div>
+                            <label for="lastname">성<span>*</span></label>
+                            <input type="text" name="lastname" id="lastname" placeholder="성 입력" required>
                         </div>
-                        <div><label for="firstname">이름<span>*</span></label>
-                            <input type="text" name="" id="firstname" placeholder="이름 입력" required>
+                        <div>
+                            <label for="firstname">이름<span>*</span></label>
+                            <input type="text" name="firstname" id="firstname" placeholder="이름 입력" required>
                         </div>
-                        <div><label for="">성별</label>
-                            <input type="radio" name="gender" id="male"><label for="male">남자</label>
-                            <input type="radio" name="gender" id="female"><label for="female">여자</label>
+                        <div>
+                            <p>성별</p>
+                            <input type="radio" name="gender" id="male" value="male">
+                            <label for="male">남자</label>
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="female">여자</label>
                         </div>
                     </li>
                     <li>
@@ -201,24 +212,23 @@
                             <input type="text" name="position" id="position" placeholder="직급 입력" required>
                         </div>
                     </li>
-
-                    <div>
+                    <li>
                         <label for="title">제목<span>*</span></label>
                         <input type="text" name="title" id="title" placeholder="제목 입력" required>
-                    </div>
-                    <div>
+                    </li>
+                    <li>
                         <label for="inquiry-content">문의내용<span>*</span></label>
-                        <textarea name="inquiry-content" id="inquiry-content" placeholder="문의 내용 입력"
-                            required></textarea>
-                    </div>
+                        <textarea name="inquiry-content" id="inquiry-content" placeholder="문의 내용 입력" required>
+                        </textarea>
+                    </li>
                     <button type="button">취소하기</button>
                     <button type="submit">전송하기</button>
-                </fieldset>
-            </form>
-        </ul>
+                </ul>
+            </fieldset>
+        </form>
         <br><br><br><br>
 
-        <h2>폼4번-수업시간에 제작</h2>
+        <h2>폼4번-수업시간에 제작-수정했음</h2>
         <form>
             <fieldset>
                 <legend>상세검색</legend>
@@ -244,22 +254,32 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>자료명</th>
-                            <td><input type="text" name="" id=""></td>
-                        </tr>
-                        <tr>
-                            <th>소장품번호</th>
-                            <td><input type="number" name="" id=""></td>
-                        </tr>
-                        <tr>
-                            <th>국적-시대</th>
+                            <th>
+                                <label for="material-name">자료명</label>
+                            </th>
                             <td>
-                                <select name="" id="">
+                                <input type=" text" name="material-name" id="material-name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="product-number">소장품번호</label>
+                            </th>
+                            <td>
+                                <input type="number" name="product-number" id="product-number">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="country">국적-시대</label>
+                            </th>
+                            <td>
+                                <select name="country" id="country">
                                     <option value="">선택</option>
                                     <option value="">선택2</option>
                                     <option value="">선택3</option>
                                 </select>
-                                <select name="" id="">
+                                <select name="era" id="era">
                                     <option value="">선택</option>
                                     <option value="">선택2</option>
                                     <option value="">선택3</option>
@@ -267,25 +287,35 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>년대</th>
+                            <th>
+                                <label for="year">년대</label>
+                            </th>
                             <td>
-                                <input type="number" name="" id="">YYYY
+                                <input type="number" name="year" id="year">YYYY
                             </td>
                         </tr>
                         <tr>
-                            <th>입수처&기증자</th>
+                            <th>
+                                <label for="certification">입수처&기증자</label></th>
                             <td>
-                                <input type="text" name="" id="">
+                                <input type="text" name="certification" id="certification">
                             </td>
                         </tr>
                         <tr>
-                            <th>공공누리</th>
+                            <th>
+                                <label for="public-type">공공누리</label>
+                            </th>
                             <td>
-                                <input type="checkbox" name="" id="type1"><label for="type1">제1유형</label>
-                                <input type="checkbox" name="" id="type2"><label for="type2">제2유형</label>
-                                <input type="checkbox" name="" id="type3"><label for="type3">제3유형</label>
-                                <input type="checkbox" name="" id="type4"><label for="type4">제4유형</label>
-                                <input type="checkbox" name="" id="type5"><label for="type5">제5유형</label>
+                                <input type="checkbox" name="public-type" id="type1" value="제1유형">
+                                <label for="type1">제1유형</label>
+                                <input type="checkbox" name="public-type" id="type2" value="제2유형" checked>
+                                <label for="type2">제2유형</label>
+                                <input type="checkbox" name="public-type" id="type3" value="제3유형">
+                                <label for="type3">제3유형</label>
+                                <input type="checkbox" name="public-type" id="type4" value="제4유형">
+                                <label for="type4">제4유형</label>
+                                <input type="checkbox" name="public-type" id="type5" value="적용안함">
+                                <label for="type5">적용안함</label>
                             </td>
                         </tr>
                     </tbody>
@@ -307,9 +337,7 @@
                         <h3>문의 유형 및 관심제품을 선택해주세요.</h3>
                         <ul>
                             <li>
-                                <label for="inquiry-type">
-                                    <h4>문의유형</h4>
-                                </label>
+                                <strong>문의유형</strong>
                                 <select name="inquiry-type" id="inquiry-type">
                                     <option value="">문의 유형을 선택해주세요</option>
                                     <option value="">문의 유형1</option>
@@ -317,7 +345,7 @@
                                 </select>
                             </li>
                             <li>
-                                <h4>관심 및 문의 제품</h4>
+                                <strong>관심 및 문의 제품</strong>
                                 <input type="checkbox" name="product" id="idf"><label for="idf">ID FILTER</label>
                                 <input type="checkbox" name="product" id="sdf"><label for="sdf">SERVER FILTER</label>
                                 <input type="checkbox" name="product" id="wdf"><label for="wdf">WEB FILTER</label>
@@ -329,10 +357,10 @@
                                 <input type="checkbox" name="product" id="etc"><label for="etc">기타</label>
                             </li>
                             <li>
-                                <h4>서비스형태</h4>
-                                <input type="checkbox" name="" id=""><label for="">클라우드형</label>
-                                <input type="checkbox" name="" id=""><label for="">구축형</label>
-                                <input type="checkbox" name="" id=""><label for="">USB형</label>
+                                <strong>서비스형태</strong>
+                                <input type="checkbox" name="" id="cloud"><label for="cloud">클라우드형</label>
+                                <input type="checkbox" name="" id="build"><label for="build">구축형</label>
+                                <input type="checkbox" name="" id="usb"><label for="usb">USB형</label>
                             </li>
                         </ul>
                     </li>
@@ -340,20 +368,18 @@
                         <h3>기본정보를 입력해주세요.</h3>
                         <ul>
                             <li>
-                                <label for="basic">
-                                    <h4>기본정보</h4>
-                                </label>
+                                <strong>기본정보</strong>
                                 <input type="text" name="company-name" id="company-name" placeholder="회사명을 입력해주세요.">
-                                <select name="" id="">
-                                    <option value="">회사지역을 선택해주세요.</option>
-                                    <option value="">회사지역1</option>
-                                    <option value="">회사지역2</option>
+                                <select name="" id="company-location">
+                                    <option value="choice2">회사지역을 선택해주세요.</option>
+                                    <option value="location1">회사지역1</option>
+                                    <option value="location2">회사지역2</option>
                                 </select>
                                 <input type="text" name="user-name" id="user-name" placeholder="이름(담당자명)을 입력해주세요.">
                                 <input type="text" name="position" id="position" placeholder="직함을 입력해주세요.">
                                 <input type="number" name="size" id="size" placeholder="회사규모를 입력해주세요.(ex. 100인 이하)">
                                 <input type="tel" name="contact" id="contact" placeholder="연락처를 입력해주세요.">
-                                <input type="emai;" name="email" id="email" placeholder="이메일을 입력해주세요.">
+                                <input type="email" name="email" id="email" placeholder="이메일을 입력해주세요.">
                                 <input type="text" name="route" id="route" placeholder="방문경로를 선택해주세요.">
                             </li>
                         </ul>
@@ -362,14 +388,14 @@
                         <h3>문의내용을 작성해주세요.</h3>
                         <ul>
                             <li>
-                                <label for="memo">문의내용</label>
+                                <strong>문의내용</strong>
                                 <textarea name="memo" id="memo" placeholder="궁금하신 점을 자세히 적어 주실수록 자세한 상담이 가능합니다.
                                 소개서 요청 / 기술지원 제품명 / 문의 사항 등을 남겨주세요."></textarea>
                             </li>
                         </ul>
                     </li>
                 </ul>
-                <button type=" reset">초기화하기</button>
+                <button type="reset">초기화하기</button>
                 <button type="submit">제출하기</button>
             </fieldset>
         </form><br><br><br><br><br>
@@ -385,13 +411,17 @@
                 <fieldset>
                     <legend>상담 문의하기</legend>
                     <p>*선택사항 작성 시 보다 빠르고 정확한 상담이 가능합니다.</p>
-                    <label for="">성함(필수)</label><input type="text" name="" id="" placeholder="ex:김세모" required>
-                    <label for="">연락처(필수)</label><input type="tel" name="" id="" placeholder="ex:01012341234"
-                        required><br>
-                    <label for="">브랜드, 제품명 (선택)</label><input type="text" name="" id="" placeholder="ex:세모샴푸"><br>
-                    <label for="">문의내용
-                        (선택)</label><textarea name="" id="" placeholder="ex:제작문의/쇼호스트지원/아카데미수강"></textarea><br>
-                    <input type="checkbox" name="" id="" checked>개인정보 수집/이용 동의
+
+                    <label for="user-name">성함(필수)</label>
+                    <input type="text" name="" id="user-name" placeholder="ex:김세모" required>
+                    <label for="user-telephone">연락처(필수)</label>
+                    <input type="tel" name="" id="user-telephone" placeholder="ex:01012341234" required><br>
+                    <label for="product-brand">브랜드, 제품명 (선택)</label>
+                    <input type="text" name="" id="product-brand" placeholder="ex:세모샴푸"><br>
+                    <label for="memo-inquiry">문의내용(선택)</label>
+                    <textarea name="" id="memo-inquiry" placeholder="ex:제작문의/쇼호스트지원/아카데미수강"></textarea><br>
+                    <input type="checkbox" name="privacy-agreement" id="privacy-agreement" checked>
+                    <label for="privacy-agreement">개인정보 수집/이용 동의</label>
                     <details>
                         <summary>열기</summary>
                         내용입니다.
@@ -420,13 +450,15 @@
                     <li>상담자는 위와 같은 개인정보 제공을 거부할 권리가 있으며, 부과되는 불이익은 없으나 상담의 적기 처리가 지연될 수는 있습니다.</li>
                 </ol>
                 <ul>
-                    <li><label for="essense">필수항목 *</label>
+                    <li>
+                        <p>필수항목 *</p>
                         <input type="radio" name="essence1" id="agree1" required>
                         <label for="agree1">동의함</label>
                         <input type="radio" name="essence1" id="disagree1" required>
                         <label for="disagree1">동의하지않음</label>
                     </li>
-                    <li><label for="choice">선택항목</label>
+                    <li>
+                        <p>선택항목</p>
                         <input type="radio" name="choice" id="agree2">
                         <label for="agree2">동의함</label>
                         <input type="radio" name="choice" id="disagree2">
@@ -436,8 +468,11 @@
 
                 <ul>
                     <li>
-                        <strong>관계사<span>*</span></strong>
-                        <select name="" id="" required>
+                        <label for="relation">
+                            <strong>관계사</strong>
+                            <span>*</span>
+                        </label>
+                        <select name="" id="relation" required>
                             <option value="">관계 선택</option>
                             <option value="">관계사1</option>
                             <option value="">관계사2</option>
@@ -445,19 +480,21 @@
                         </select>
                     </li>
                     <li>
-                        <strong>이름<span>*</span></strong>
-                        <input type="text" name="" id="" placeholder="이름을 입력하세요." required>
+                        <label for="name-user2">이름<span>*</span></label>
+                        <input type="text" name="name-user2" id="name-user2" placeholder="이름을 입력하세요." required>
                     </li>
                     <li>
-                        <strong>전화번호<span>*</span></strong>
-                        <input type="tel" name="" id="" placeholder="-없이 숫자만 입력하세요." required>
+                        <label for="user-telephone2">전화번호<span>*</span></label>
+                        <input type="tel" name="" id="user-telephone2" placeholder="-없이 숫자만 입력하세요." required>
                     </li>
                     <li>
-                        <strong>이메일<span>*</span></strong>
-                        <input type="text" name="" id="" placeholder="이메일" required>
+                        <label for="email-id">
+                            이메일<span>*</span>
+                        </label>
+                        <input type="text" name="email-id" id="email-id" placeholder="이메일" required>
                         <span>@</span>
-                        <input type="text" name="" id="" placeholder="도메인" required>
-                        <select name="" id="">
+                        <input type="text" name="domain" id="domain" placeholder="도메인" required>
+                        <select name="domain" id="domain">
                             <option value="">선택</option>
                             <option value="">gmail.com</option>
                             <option value="">abc.com</option>
@@ -466,13 +503,14 @@
                         <p><img src="./images/help.svg" alt="헬프">이메일을 입력 하지 않으면 답변을 받을 수 없습니다.</p>
                     </li>
                     <li>
-                        <strong>제목<span>*</span></strong>
-                        <input type="text" name="" id="" placeholder="제목을 입력하세요." required>
+                        <label for="title2">제목<span>*</span>
+                            title2</label>
+                        <input type="text" name="title2" id="title2" placeholder="제목을 입력하세요." required>
                     </li>
                     <li>
-                        <strong>내용<span>*</span></strong>
-                        <textarea name="" id="" placeholder="내용을 입력하세요. (최대 1,000자까지 입력가능합니다.)" minlength="1"
-                            maxlength="1000" required></textarea>
+                        <label for="contents">내용<span>*</span></label>
+                        <textarea name="contents" id="contents" placeholder="내용을 입력하세요. (최대 1,000자까지 입력가능합니다.)"
+                            minlength="1" maxlength="1000" required></textarea>
                     </li>
                 </ul>
                 <button type="button">취소</button>
@@ -506,7 +544,7 @@
                             😝<input type="radio" name="group" id="d"><label for="d">불만족</label>
                             🤪<input type="radio" name="group" id="e"><label for="e">매우불만족</label>
                         </div>
-                        <input type="search" name="" id="" placeholder="여러분의 소중한 의견을 보내주세요"
+                        <input type="search" name="opinion" id="opinion" placeholder="여러분의 소중한 의견을 보내주세요"
                             style="width: 240px;"><br><br>
                         <button type="reset">초기화</button>
                         <button type="submit">입력</button>
@@ -516,145 +554,88 @@
         </ul><br><br><br><br><br>
 
         <h2>폼9번 와인종류-곧 수정예정입니다😌</h2>
-        <form>
-            <fieldset>
-                <legend>와인종류</legend>
-                <ul>
-                    <li>
-                        <select name="" id="" multiple>
-                            <option value="">와인종류</option>
-                            <option value="">레드 와인</option>
-                            <option value="">화이트 와인</option>
-                            <option value="">로제 와인</option>
-                            <option value="">샴페인</option>
-                            <option value="">로제 샴페인</option>
-                            <option value="">레드 스파클링 와인</option>
-                            <option value="">화이트 스파클링 와인</option>
-                            <option value="">로제 스파클린 와인</option>
-                            <option value="">스위트 와인</option>
-                        </select>
-                        <select name="" id="">
-                            <option value="">생산국</option>
-                            <option value="">생산국1</option>
-                            <option value="">생산국2</option>
-                        </select>
-                        <select name="" id="">
-                            <option value="">생산지</option>
-                            <option value="">생산지1</option>
-                            <option value="">생산지2</option>
-                        </select>
-                        <input type="search" name="" id="" placeholder="와인 이름을 입력하세요"><img
-                            src="./images/mingcute-search-line.svg" alt="검색">
-                    </li>
-                </ul>
-            </fieldset>
-        </form><br><br><br><br>
+        <nav>
+            <form>
+                <fieldset>
+                    <legend>와인종류</legend>
+                    <div>
+                        <!--와인종류-->
+                        <button type="button">와인종류
+                            <img src="./images/arrowup.svg" alt="닫기">
+                        </button>
+                        <ul>
+                            <li>
+                                <button type="button">와인종류</button>
+                            </li>
+                            <li>
+                                <button type="button">레드 와인</button>
+                            </li>
+                            <li>
+                                <button type="button">화이트 와인</button>
+                            </li>
+                            <li>
+                                <button type="button">로제 와인</button>
+                            </li>
+                            <li>
+                                <button type="button">샴페인</button>
+                            </li>
+                            <li>
+                                <button type="button">로제 샴페인</button>
+                            </li>
+                            <li>
+                                <button type="button">레드 스파클링 와인</button>
+                            </li>
+                            <li>
+                                <button type="button">화이트 스파클링 와인</button>
+                            </li>
+                            <li>
+                                <button type="button">로제 스파클린 와인</button>
+                            </li>
+                            <li>
+                                <button type="button">스위트 와인</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--생산국메뉴-->
+                    <div>
+                        <button type="button">생산국
+                            <img src="./images/arrow_down_dark.svg" alt="열기">
+                        </button>
+                        <ul hidden>
+                            <li>
+                                <button type="button">프랑스</button>
+                            </li>
+                            <li>
+                                <button type="button">이탈리아</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--생산지-->
+                    <div>
+                        <button type="button">생산지
+                            <img src="./images/arrow_down_dark.svg" alt="열기">
+                        </button>
+                        <ul hidden>
+                            <li>
+                                <button type="button">보르도</button>
+                            </li>
+                            <li>
+                                <button type="button">부르고뉴</button>
+                            </li>
+                            <li>
+                                <button type="button">샴페인</button>
+                            </li>
+                        </ul>
+                    </div>
 
-        <h2>폼10번 약관동의하기-수정함</h2>
-        <h3>약관동의</h3>
-        <p>※선택항목은 거부할 권리가 있으며 수신 동의 여부와 관계없이 본 서비스 가입 및 이용이 가능합니다.</p>
-        <form>
-            <fieldset>
-                <legend>약관동의</legend>
-                <ul>
-                    <li>
-                        <input type="checkbox" name="agree" id="agree-all" checked>
-                        <label for="agreeall">약관
-                            전체동의</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="agree" id="agree-terms">
-                        <label for="agree-terms">이용약관(필수)</label>
-                        <details name="term-details">
-                            <summary>전체보기</summary>
-                            <p>이용약관 내용</p>
-                        </details>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="agree" id="agree-privacy">
-                        <label for="agree-privacy">개인정보
-                            수집 및 이용 동의(필수)</label>
-                        <details name="term-details">
-                            <summary>전체보기</summary>
-                            <p>개인정보 수집 및 이용 동의 내용</p>
-                        </details>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="agree" id="agree-marketing" required>
-                        <label for="agree-marketing">마케팅 활용 동의
-                            (선택)</label>
-                        <details name="term-details">
-                            <summary>전체보기</summary>
-                            <p>마케팅 활용 동의 내용</p>
-                        </details>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="agree" id="agree-ad">
-                        <label for="agree-ad">광고성
-                            정보 수신동의(선택)</label>
-                        <details name="term-details" open>
-                            <summary>전체보기</summary>
-                            <div>
-                                <h4>선택 동의 항목</h4>
-                                <strong>이벤트 등 마케팅/광고 수신 동의 (선택)</strong>
-                                <p>이벤트 등의 혜택 정보 제공을 위해 고객의 개인정보를 아래와 같이 수집합니다.</p>
-                                <p>고객님께서는 거부할 권리가 있으며 수신 동의 여부와 관계없이 본 서비스 가입 및 이용이 가능합니다.</p>
-                                <p>중요 공지 및 알림은 수신 동의 여부와 관계없이 발송됩니다.</p>
-
-                                <table>
-                                    <caption>선택 동의 항목</caption>
-                                    <colgroup>
-                                        <col>
-                                        <col>
-                                        <col>
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>수집 및 이용목적</th>
-                                            <th>개인정보 수집항목</th>
-                                            <th>보유 및 이용기간</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>이벤트 등 프로모션 알림 TM(전화)</td>
-                                            <td>TM(전화)</td>
-                                            <td>회원 탈퇴 시 까지</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <p>개인정보 수집 및 이용에 동의합니다.</p>
-                            </div>
-                        </details>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="agree-ad" id="agree-ad-tm">
-                        <label for="agree-ad-tm">광고성 정보 수신동의_TM(선택)</label>
-                        <details name="term-details">
-                            <summary>전체보기</summary>
-                            내용이들어갑니다.1
-                        </details><br>
-                        <input type="checkbox" name="agree-ad" id="agree-ad-email">
-                        <label for="agree-ad-email">광고성 정보 수신동의_이메일(선택)</label>
-                        <details name="term-details">
-                            <summary>전체보기</summary>
-                            내용이들어갑니다.2
-                        </details><br>
-                        <input type="checkbox" name="agree-ad" id="agree-ad-msg">
-                        <label for="agree-ad-msg">광고성 정보 수신동의_메시지(선택)</label>
-                        <details name="term-details">
-                            <summary>전체보기</summary>
-                            내용이들어갑니다.3
-                        </details><br>
-                    </li>
-                </ul>
-                <p>※마케팅 활용 및 광고성 정보 수신 동의를 하시면 쿠폰증정, 할인정보 안내 등 특별한 혜택을 주기적으로 제공해 드립니다.</p>
-                <div>
-                    <button type="submit">회원가입</button>
-                    <button type="button">취소</button>
-                </div>
-            </fieldset>
-        </form><br><br><br><br>
+                    <!-- 검색 폼 -->
+                    <input type="search" name="wine-title" id="wine-title" placeholder="와인 이름을 입력하세요">
+                    <button type="submit">
+                        <img src="images/Ic_search_dark.svg" alt="search">
+                    </button>
+            </form>
+        </nav>
+        <br><br><br><br>
 
         <h2>폼11번-수정함/alt 이름 삭제</h2>
         <h3>채용, 시작부터 선발까지 Agile하게<br>
@@ -665,9 +646,9 @@
             <form>
                 <fieldset>
                     <legend>Log in</legend>
-                    <input type="text" name="" id="" placeholder="ID를 입력해주세요.">
+                    <input type="text" name="login-id" id="login-id" placeholder="ID를 입력해주세요.">
                     <img src="./images/person2.svg" alt="">
-                    <input type="password" placeholder="비밀번호를 입력해주세요.">
+                    <input type="password" name="login-pw" id="login-pw" placeholder="비밀번호를 입력해주세요.">
                     <img src="./images/key.svg" alt="">
                     <button type="submit">로그인</button><br>
                     <span>
@@ -698,11 +679,11 @@
                         <li>비밀번호찾기</li>
                     </ul>
 
-                    <input type="text" name="enter_id" id="enter_id" placeholder="이름을 입력해 주세요">
+                    <input type="text" name="enter-id" id="enter-id" placeholder="이름을 입력해 주세요">
                     <img src="./images/ic_person.svg" alt="">
                     <img src="./images/person2.svg" alt="">
 
-                    <input type="email" placeholder="이메일을 입력해주세요.">
+                    <input type="email" name="enter-email" id="enter-email" placeholder="이메일을 입력해주세요.">
                     <img src="./images/mdi_email.svg" alt="">
                     <button type="submit">확인</button>
                 </fieldset>
@@ -718,7 +699,7 @@
                         <li>비밀번호찾기</li>
                     </ul>
                     <input type="text" placeholder="아이디를 입력해주세요."><img src="./images/person3.svg" alt="">
-                    <input type="text" name="enter_name" id="enter_name" placeholder="이름을 입력해 주세요."> <img
+                    <input type="text" name="enter-name" id="enter-name" placeholder="이름을 입력해 주세요."> <img
                         src="./images/ic_person.svg" alt="">
                     <input type="email" placeholder="이메일을 입력해주세요."><img src="./images/mdi_email.svg" alt="">
                     <button type="submit">확인</button>
@@ -732,30 +713,30 @@
             <fieldset>
                 <legend>도입문의 및 데모 신청</legend>
                 <strong>요청사항<span>*</span></strong>
-                <input type="checkbox" name="ask" id="free1" checked>
+                <input type="checkbox" name="" id="free1" checked>
                 <label for="free1">무료체험 신청</label>
-                <input type="checkbox" name="ask" id="free2">
+                <input type="checkbox" name="" id="free2">
                 <label for="free2">도입문의</label>
-                <input type="checkbox" name="ask" id="free3">
+                <input type="checkbox" name="" id="free3">
                 <label for="free3">서비스소개서 신청</label>
 
                 <strong>회사명<span>*</span></strong>
-                <input type="text" name="company_title" id="company_title" placeholder="회사명을 입력해 주세요" required>
+                <input type="text" name="company-title" id="company-title" placeholder="회사명을 입력해 주세요" required>
 
                 <strong>부서명<span>*</span></strong>
                 <input type="text" name="department" id="department" placeholder="부서명을 입력해 주세요" required>
 
                 <strong>이름<span>*</span></strong>
-                <input type="text" name="user_name" id="user_name" placeholder="이름을 입력해 주세요" required>
+                <input type="text" name="user-name" id="user-name" placeholder="이름을 입력해 주세요" required>
 
                 <strong>연락처<span>*</span></strong>
                 <input type="tel" name="contact2" id="contact2" placeholder="연락처를 입력해 주세요" required>
 
                 <strong>이메일<span>*</span></strong>
-                <input type="tel" name="email" id="email" placeholder="이메일을 입력해 주세요" required>
+                <input type="email" name="email" id="email" placeholder="이메일을 입력해 주세요" required>
 
                 <strong>홈페이지</strong>
-                <input type="tel" name="website" id="website" placeholder="회사 홈페이지 주소를 입력해 주세요">
+                <input type="text" name="website" id="website" placeholder="회사 홈페이지 주소를 입력해 주세요">
 
                 <div>
                     <h5>개인정보 수집 및 이용 안내</h5>
