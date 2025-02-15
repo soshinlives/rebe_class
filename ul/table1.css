@@ -106,11 +106,42 @@ table th,와 td 에만 css 가 작동한다.
     }
 }
 
+.color-blue2 {
+    color: var(--textBlue700);
+}
+
+
 .text-left {
     text-align: left;
 
     .table-type1 & {
         /*table-type1이 부모이면 , 20점 */
         text-align: left;
+    }
+}
+
+.button-area {
+    display: flex;
+    justify-content: center;
+    padding: 3.12rem 0 0 0;
+
+    .show-more1 {
+        display: flex;
+        align-items: center;
+
+        padding: 0.625rem;
+
+        color: var(--textBlack);
+        background: var(--bgWhite);
+
+        color: var(--textBlack);
+        font-family: "Noto Sans KR";
+        font-size: 1.4375rem;
+
+        .show-more2 {
+            color: var(--textBlack);
+            padding: 0 10px;
+            font-weight: 700;
+        }
     }
 }

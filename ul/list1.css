@@ -66,6 +66,24 @@ body {
     box-shadow: var(--shadowType1);
 }
 
+.tab-type1 {
+    display: flex;
+
+    li {
+        flex: 1;
+    }
+
+    /*li가 n분의 1만큼 늘어난다. */
+    button {
+        width: 100%;
+        /* 버튼을 100%로 채운다 */
+    }
+}
+
+.color-blue {
+    color: var(--textBlue);
+}
+
 .tab-content {
     color: var(--textBlack);
     font-family: "Noto Sans KR";
@@ -83,22 +101,4 @@ body {
     align-items: center;
     gap: 0.625rem;
     margin-top: 1.62rem;
-}
-
-.tab-type1 {
-    display: flex;
-
-    li {
-        flex: 1;
-    }
-
-    /*li가 n분의 1만큼 늘어난다. */
-    button {
-        width: 100%;
-        /* 버튼을 100%로 채운다 */
-    }
-}
-
-.color-blue {
-    color: var(--textBlue);
 }

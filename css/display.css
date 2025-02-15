@@ -12,11 +12,13 @@
     border: 5px solid sandybrown;
     padding: 0 10px;
     /* 좌우 방향만 여백 넣기 가능 */
-    /* margin: 10px; */
-    padding: 10px;
-    /* 인라인은 배치용은 아님, 좌우 배치는 가능하다. 상하는 쓸수없다. 여백만...*/
-    width: 100px;
-    height: 100px;
+    margin: 10px;
+    /* padding: 10px; */
+    /* 인라인은 배치용은 아님, 좌우 배치는 가능하다. 상하는 쓸수없다. 여백만...
+    상하는 레이아웃을 밀어내지 못한다. 그래서 겹치므로 취약점이다.
+    여백주고 싶으면 inline-block이나 block을 주라.*/
+    /* width: 100px;
+    height: 100px; */
 }
 
 .inline-block {
@@ -26,6 +28,7 @@
     width: 100px;
     height: 100px;
     padding: 10px;
+    background: yellow;
     /* margin: 10px; */
 }
 
