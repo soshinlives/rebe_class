@@ -1,0 +1,116 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    padding: 5rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+:root {
+    --blue200: #0FA3EA;
+    --blue700: #1A61C7;
+    --gray100: #F1F6FB;
+    --gray300: #DADADA;
+    --black: #000000;
+    --white: #FFFFFF;
+
+    --textBlue200: var(--blue200);
+    --textBlue700: var(--blue700);
+    --textGray100: var(--gray100);
+    --textGray300: var(--gray300);
+    --textBlack: var(--black);
+    --textWhite: var(--white);
+
+    --borderBlue200: var(--blue200);
+    --borderBlue700: var(--blue700);
+    --borderGray100: var(--gray100);
+    --borderGray300: var(--gray300);
+    --borderBlack: var(--black);
+    --borderWhite: var(--white);
+
+    --bgBlue200: var(--blue200);
+    --bgBlue700: var(--blue700);
+    --bgGray100: var(--gray100);
+    --bgGray300: var(--gray300);
+    --bgBlack: var(--black);
+    --bgWhite: var(--white);
+}
+
+/*
+table, th, td 
+표의 모든 태그에 제공가능한 css
+>> background, color, border
+패딩은 아님. '크기를 조절'하는 것은 넣지마라.
+table th,와 td 에만 css 가 작동한다.
+테이블 자체에는 패딩은 안되고 마지만 적용.
+패딩줄려묜 무조건 th, td 에 넣어라.
+
+*/
+.table-type1 {
+    thead {
+        border-top: 0.125rem solid var(--black);
+        background: var(--bgGray100);
+
+        /* width 가 안 먹는다. th에 넣어주는 것이 가장 안전하다. */
+        th {
+            color: var(--textBlack);
+            font-family: "Noto Sans KR";
+            font-size: 1.25rem;
+            font-weight: 400;
+            /* 기본이 700이므로 400을 적어라.*/
+            height: 5.8125rem;
+            padding: 1.5rem 0.625rem;
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 0.0625rem solid var(--gray300);
+        }
+
+        td {
+            color: var(--black);
+            font-family: "Noto Sans KR";
+            font-size: 1.25rem;
+            font-weight: 400;
+            text-align: center;
+            /* 높이와 패딩을 넣자 */
+            height: 5.75rem;
+            /*최소 높이의 개념으로 넣자.*/
+            padding: 1.875rem 0.625rem;
+        }
+    }
+}
+
+.color-blue {
+    color: var(--textBlue200);
+
+    .table-type1 & {
+        /* 부모들 중에서 table-type1이 있다면 적용된다. */
+        color: var(--blue200);
+    }
+}
+
+.text-left {
+    text-align: left;
+
+    .table-type1 & {
+        /*table-type1이 부모이면 , 20점 */
+        text-align: left;
+    }
+}

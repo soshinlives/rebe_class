@@ -1,0 +1,83 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    padding: 5rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+:root {
+    --gray100: #F6F6F6;
+    --gray200: #CCCCCC;
+    --gray300: #E9E8E8;
+    --gray400: #ECEBEB;
+    --gray500: #999999;
+    --gray500: #505050;
+    --black: #000;
+    --white: #fff;
+    --blue700: #202E5E;
+
+    /*text*/
+    --textGray000: var(--black);
+    --textGray500: var(--gray500);
+
+    /*bg*/
+    --bgColor: var(--gray400);
+
+    /*line*/
+    --borderTop: var(--black);
+    --borderBottom: var(--gray400);
+}
+
+.table-type1 {
+    thead {
+        border-top: 0.125rem solid var(--blue700);
+        background: var(--gray100);
+
+        th {
+            color: var(--black);
+            font-family: "Noto Sans KR";
+            font-size: 1.125rem;
+            font-weight: 400;
+            height: 2.75rem;
+            padding: 0.56rem 0.56rem;
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 0.0625rem solid var(--gray200);
+        }
+
+        td {
+            color: var(--textGray000);
+            font-style: normal;
+            text-align: center;
+            height: 2.625rem;
+            padding: 0.59rem 0.62rem;
+        }
+    }
+}
+
+.text-left {
+    text-align: left;
+
+    .table-type1 & {
+        text-align: left;
+    }
+}

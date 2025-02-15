@@ -1,0 +1,104 @@
+/*reset.css*/
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    padding: 5rem;
+}
+
+/* 변수정의 */
+:root {
+    /*
+    변수명은 목적
+    -텍스트 색상
+    -선 색상
+    -배경 색상
+    */
+    --blue: #1456CC;
+    --black: #000;
+    --graydb: #DBDBDB;
+    --white: #ffffff;
+
+    /*선 정의*/
+    --borderBlue: var(--blue);
+    --borderBlack: var(--black);
+    --borderGraydb: var(--graydb);
+    --borderWhite: var(--white);
+
+    /*텍스트 정의*/
+    --textBlue: var(--blue);
+    --textBlack: var(--black);
+    --textGraydb: var(--graydb);
+    --textWhite: var(--white);
+
+    /*배경 정의*/
+    --bgWhite: var(--white);
+
+    /*그림자 정의*/
+    --shadowType1: 6px 6px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.btn-off {
+    color: var(--textBlack);
+    font-family: "Noto Sans KR";
+    font-size: 1.125rem;
+    background: var(--bgWhite);
+    height: 3.6875rem;
+    border: 1px solid var(--borderGraydb);
+}
+
+.btn-on {
+    color: var(--textBlue);
+    font-family: "Noto Sans KR";
+    font-size: 1.125rem;
+    font-weight: 500;
+
+    height: 3.6875rem;
+    background: var(--bgWhite);
+
+    border: 2px solid var(--borderBlue);
+    box-shadow: var(--shadowType1);
+}
+
+.tab-content {
+    color: var(--textBlack);
+    font-family: "Noto Sans KR";
+    font-size: 1.5625rem;
+    font-weight: 500;
+    text-align: center;
+
+    display: flex;
+
+    height: 13.375rem;
+    padding: 0.625rem;
+    border: 1px solid var(--borderGraydb);
+    background: var(--bgWhite);
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    margin-top: 1.62rem;
+}
+
+.tab-type1 {
+    display: flex;
+
+    li {
+        flex: 1;
+    }
+
+    /*li가 n분의 1만큼 늘어난다. */
+    button {
+        width: 100%;
+        /* 버튼을 100%로 채운다 */
+    }
+}
+
+.color-blue {
+    color: var(--textBlue);
+}

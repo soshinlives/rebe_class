@@ -1,0 +1,64 @@
+.flex1 {
+    display: flex;
+    justify-content: end;
+    /* 주축만 시도, 수평정렬 */
+    /*start, center, end */
+    /*모든 요소를 수평으로 정렬시킨다.*/
+    border: 1px solid tomato;
+    padding: 5px;
+
+    >div {
+        border: 3px solid seagreen;
+        padding: 5px;
+    }
+}
+
+.flex2 {
+    /* 위아래 같이 함 */
+    display: flex;
+    justify-content: end;
+    /* justify-content:start가 기본, 그리드는 상하 좌우 기본이 stretch이다 */
+    align-items: end;
+    /*start, center, end */
+    /*stretch*/
+    height: 200px;
+    /*기본값이 align-items: stretch */
+
+    border: 3px solid tomato;
+    padding: 5px;
+
+    >div {
+        border: 3px solid seagreen;
+        padding: 5px;
+    }
+}
+
+.flex3 {
+    display: flex;
+    /* height: 200px;
+    align-items: end; */
+    /* 기본은 스트레치 이지미나 align-itmes에 정렬값을 주면 자기자신의 크기로 돌아가면서 정렬이된다. 
+    start, center, end, stretch 라는 것은 자식이 부모만큼 커진다.
+    */
+    border: 3px solid tomato;
+    padding: 5px;
+
+    >div {
+        flex: 1;
+        /* 자식의 갯수와 상관없이 n분의 1만큼 차지 */
+        border: 3px solid seagreen;
+        padding: 5px;
+    }
+
+    .item1 {
+        flex: 2;
+    }
+
+    .item2 {
+        flex: none;
+        /* 1번 flex:none으로 작성한 후*/
+        width: 100px;
+        /* 2번 고정너비를 지정한다. */
+        background: lime;
+    }
+}

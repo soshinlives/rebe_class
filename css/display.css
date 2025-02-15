@@ -1,0 +1,54 @@
+/*block요소*/
+.block {
+    border: 2px solid salmon;
+    padding: 10px;
+    /* margin: 10px; */
+    width: 100px;
+    height: 100px;
+}
+
+/*inline*/
+.inline {
+    border: 5px solid sandybrown;
+    padding: 0 10px;
+    /* 좌우 방향만 여백 넣기 가능 */
+    /* margin: 10px; */
+    padding: 10px;
+    /* 인라인은 배치용은 아님, 좌우 배치는 가능하다. 상하는 쓸수없다. 여백만...*/
+    width: 100px;
+    height: 100px;
+}
+
+.inline-block {
+    /*블록처럼 가로/세로 마진/패딩 들어간다.
+    단점: 단점이 많아서 생각보다 잘 안쓰인다.
+    */
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    /* margin: 10px; */
+}
+
+/* inline와 inline-block의 취약점 */
+
+.label {
+    border: 1px solid darkolivegreen;
+}
+
+/*한줄코딩
+font-size:0; <--옛날방식
+flex, grid
+*/
+
+.space {
+    /*방법1*/
+    /* font-size: 0;
+    label {
+        font-size: 1rem;
+    } -옛날방식이다. */
+    /*방법2*/
+    /* display: flex; -> 최근방식 */
+    /*방법3 - 밑으로 떨어지면서 붙는다.*/
+    /* display: grid; -> 최근방식 */
+    /*방법4-html 코드를 한줄처리-옛날방식*/
+}

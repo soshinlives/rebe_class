@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+/* 변수정의 */
+:root {
+    --gray100: #F0F1F2;
+    --gray200: #EDEEF0;
+    --gray300: #BBBBBB;
+    --gray400: #9FA19F;
+    --gray500: #555555;
+    --gray600: #333333;
+
+    --blue400: #1090FD;
+    --blue900: #123A8E;
+
+    --white: #ffffff;
+
+    /*선 정의*/
+    --borderGray100: var(--gray100);
+    --borderGray300BBB: var(--gray300);
+    --boderGray500: var(--gray500);
+
+    /*텍스트 정의*/
+    --textGray1: var(--gray600);
+    --textGray2: var(--gray300);
+    --textGray3: var(--gray400);
+    --textWhite: var(--white);
+
+    /*배경 정의*/
+    --bgColor: var(--white);
+    --bgColor2: var(--blue400);
+    --bgColor3: var(--blue900);
+
+    /*그림자 정의*/
+    --shadowType1: box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.title1 {
+    color: var(--gray600);
+    font-family: "Noto Sans KR";
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.title2 {
+    color: var(--gray400);
+    font-family: "Noto Sans KR";
+    font-size: 0.8125rem;
+    font-weight: 400;
+}
+
+.title3 {
+    color: var(--gray600);
+    font-family: "Noto Sans KR";
+    font-size: 0.8125rem;
+    font-weight: 400;
+}
+
+.price1 {
+    color: #9FA19F;
+    font-family: "Noto Sans KR";
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-decoration-line: strikethrough;
+}
+
+.price2 {
+    color: #333;
+    font-family: "Noto Sans KR";
+    font-size: 0.9375rem;
+    font-weight: 700;
+}
+
+.explain {
+    width: 34.375rem;
+    color: var(--textGray1);
+    font-family: "Noto Sans KR";
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.0625rem;
+    /* 130.769% */
+}
+
+.button1 {
+    width: 8.75rem;
+    height: 2.5rem;
+    padding: 0.625rem;
+    background: var(--blue400);
+    gap: 0.625rem;
+
+    color: var(--textWhite);
+    font-family: "Noto Sans KR";
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.0625rem;
+}
+
+.button2 {
+    width: 8.75rem;
+    height: 2.5rem;
+    padding: 0.625rem;
+    background: var(--blue900);
+
+    color: var(--textWhite);
+    font-family: "Noto Sans KR";
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.0625rem;
+}
+
+.button3 {
+    width: 8.75rem;
+    height: 2.5rem;
+    padding: 0.625rem;
+    border: 2px solid #555;
+    background: var(--bgColor);
+
+    color: var(--textGray1);
+    font-family: "Noto Sans KR";
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.0625rem;
+}

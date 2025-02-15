@@ -1,98 +1,156 @@
 <!DOCTYPE html>
-<lang="kr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>css</title>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/global.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/global.css" />
+</head>
 
-    <body>
-        <details name="css">
-            <summary>선택자우선순위</summary>
-            <div class="specificity" id="selector" style="color:pink">우선순위</div>
-        </details>
-        <details name="css">
-            <summary>네스팅</summary>
-            <div class="nesting">
-                <div>
-                    <span>
-                        <a href=""><span>링크</span></a>
-                        <em class="em">텍스트</em>
-                    </span>
-                </div>
+<body>
+    <details name="css">
+        <summary>선택자우선순위</summary>
+        <div class="specificity" id="selector" style="color:pink">우선순위</div>
+    </details>
+    <details name="css">
+        <summary>네스팅</summary>
+        <div class="nesting">
+            <div>
+                <span>
+                    <a href=""><span>링크</span></a>
+                    <em class="em">텍스트</em>
+                </span>
             </div>
-        </details>
-        <details name="css">
-            <summary>Font관련 CSS</summary>
-            <ul>
-                <li style="font-family: dotum">서체종류를 정의</li>
-                <li style="font-family: 'Noto Sans KR', serif">노토산스정의</li>
-                <li style="font-size: 12px">폰트크기를 정의</li>
-                <li style="font-size: 1rem">REM 정의</li>
-                <li style="font-weight: bold">서체 굵기 normal, bold</li>
-                <li style="font-family: 'Noto Sans KR', serif; font-weight: 300">noto sans 서체 굵기 normal, bold</li>
-                <li>
-                    <h1 style="font-weight: normal;">굵은</h1>
-                    <strong style="font-weight: normal;">굵은</strong>
-                    <b style="font-weight: normal;">굵은</b>
-                    <table>
-                        <tr>
-                            <th style="font-weight: normal;">굵은</th>
-                        </tr>
-                    </table>
-                </li>
-                <li style="text-align: center">텍스트 수평정렬, inline 요소, inlie-block 요소, left, right, center</li>
-                <li style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam,
-                    sapiente
-                    maxime
-                    sunt quo delectus dolores neque eos excepturi fuga, dicta suscipit ad voluptas, eius nisi maiores
-                    quidem?
-                    Saepe,
-                    enim ea!</li>
-                <li style="align-content: baseline; border: 1px solid black; height: 50px;">텍스트 수직정렬, baseline, center,
-                    end,
-                    특정
-                    높이
-                    안에서 가운데로 오게한다.</li>
-                <li style="color: #F93f3f;">텍스트 색상1</li>
-                <li style="color: rgba(249, 63, 63, 0.75)">텍스트 색상2</li>
-                <li style="color:transparent">텍스트 색상3</li>
+        </div>
+    </details>
+    <details name="css">
+        <summary>Font관련 CSS</summary>
+        <ul>
+            <li style="font-family: dotum">서체종류를 정의</li>
+            <li style="font-family: 'Noto Sans KR', serif">노토산스정의</li>
+            <li style="font-size: 12px">폰트크기를 정의</li>
+            <li style="font-size: 1rem">REM 정의</li>
+            <li style="font-weight: bold">서체 굵기 normal, bold</li>
+            <li style="font-family: 'Noto Sans KR', serif; font-weight: 300">noto sans 서체 굵기 normal, bold</li>
+            <li>
+                <h1 style="font-weight: normal;">굵은</h1>
+                <strong style="font-weight: normal;">굵은</strong>
+                <b style="font-weight: normal;">굵은</b>
+                <table>
+                    <tr>
+                        <th style="font-weight: normal;">굵은</th>
+                    </tr>
+                </table>
+            </li>
+            <li style="text-align: center">텍스트 수평정렬, inline 요소, inlie-block 요소, left, right, center</li>
+            <li style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam,
+                sapiente
+                maxime
+                sunt quo delectus dolores neque eos excepturi fuga, dicta suscipit ad voluptas, eius nisi maiores
+                quidem?
+                Saepe,
+                enim ea!</li>
+            <li style="align-content: baseline; border: 1px solid black; height: 50px;">텍스트 수직정렬, baseline, center,
+                end,
+                특정
+                높이
+                안에서 가운데로 오게한다.</li>
+            <li style="color: #F93f3f;">텍스트 색상1</li>
+            <li style="color: rgba(249, 63, 63, 0.75)">텍스트 색상2</li>
+            <li style="color:transparent">텍스트 색상3</li>
 
-                <li style="line-height: 20px"></li>
-                <li style="letter-spacing: -1px"></li>
-                <li style="text-decoration: underline; text-decoration-style: wavy">텍스트 줄꾸밈</li>
-                <li>
-                    <a href="" style="text-decoration: none;">링크</a>
-                    <u style="text-decoration: none;">밑줄1</u>
-                    <ins style="text-decoration: none;">밑줄2</ins>
-                </li>
-            </ul>
-            <div class="text-outline">텍스트외곽선</div>
-        </details>
+            <li style="line-height: 20px"></li>
+            <li style="letter-spacing: -1px"></li>
+            <li style="text-decoration: underline; text-decoration-style: wavy">텍스트 줄꾸밈</li>
+            <li>
+                <a href="" style="text-decoration: none;">링크</a>
+                <u style="text-decoration: none;">밑줄1</u>
+                <ins style="text-decoration: none;">밑줄2</ins>
+            </li>
+        </ul>
+        <div class="text-outline">텍스트외곽선</div>
+    </details>
 
-        <details nams="css">
-            <summary>Box Model</summary>
-            <div class="box1">여백정의1</div>
-            <div class="box2">여백정의2</div>
-            <div class="box3"></div>
-        </details>
+    <details nams="css">
+        <summary>Box Model</summary>
+        <div class="box1">여백정의1</div>
+        <div class="box2">여백정의2</div>
+        <div class="box3"></div>
+    </details>
 
-        <details nams="css" open>
-            <summary>Shadow</summary>
-            <div class="shadow"></div>
-            <div class="text-shadow">글씨그림자</div>
-        </details>
+    <details nams="css">
+        <summary>Shadow</summary>
+        <div class="shadow"></div>
+        <div class="text-shadow">글씨그림자</div>
+    </details>
 
-        <details nams="css">
-            <summary>Radius</summary>
-            <div class="radius"></div>
-            <div class="circle1"></div>
-            <div class="circle2"></div>
-        </details>
+    <details nams="css">
+        <summary>Radius</summary>
+        <div class="radius"></div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </details>
 
-    </body>
+    <details name="css">
+        <summary>css변수</summary>
+        <div class="variable">변수정의</div>
+        <div class="var2">지역변수</div>
+        <div class="var3">변수 적용범위(Scope)
+            <p>파란색텍스트</p>
+        </div>
+        <div class="var4">변수 재할당(재정의)</div>
+        <div class="var5" style="--fontLarge:40px">변수 상속</div>
+        <div class="var6">데이터형(변수값의 종류)</div>
+    </details>
+    <details name="css">
+        <summary>display</summary>
+        <div class="block">1</div>
+        <div class="block">2</div>
+        <div class="block">3</div>
+        <br />
+        <br />
+        <br />
+        <!-- afjdkdjf;ld sdkdfldsfk; sdskdsldsds<br>
+        <span class="inline">1</span>
+        <span class="inline">2</span>
+        <span class="inline">3</span><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <br><br> -->
 
-    </html>
+        <div class="space">
+            <textarea class="inline-block">1</textarea>
+            <textarea class="inline-block">2</textarea>
+            <textarea class="inline-block">3</textarea>
+        </div>
+
+        <br>
+        <div class="space">
+            <input type="text" value="inline-block" />
+            <label for="">inline</label>
+        </div>
+    </details>
+    <details name="css" open>
+        <summary>FlexLayout</summary>
+        <div class="flex1">
+            <div class="item1">1-1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+        </div>
+        <div class="flex2">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+        </div>
+        <div class="flex3">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+        </div>
+    </details>
+</body>
+
+</html>

@@ -4,3 +4,30 @@
 @import url(./boxmodel.css);
 @import url(./shadow.css);
 @import url(./radius.css);
+@import url(./variable.css);
+@import url(./display.css);
+@import url(./flex.css);
+
+/* 글로벌.css 아래 삽입 25/02/15*/
+body {
+    >details {
+        summary {
+            border: 2px solid silver;
+            padding: 0.5rem 1rem;
+            font-size: 1.5rem;
+            position: relative;
+        }
+
+        &[open] {
+            &::details-content {
+                border: 1px solid silver;
+                padding: 1rem;
+                font-size: 2rem;
+            }
+        }
+
+        ~details {
+            margin-top: 2rem;
+        }
+    }
+}

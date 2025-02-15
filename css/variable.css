@@ -1,0 +1,68 @@
+/*
+--변수명:변수값; //변수명 한글, 숫자안됨
+let bold="bold";
+const text = "text";
+*/
+
+:root {
+    /* 전역으로 변수를 사용할 수 있게 정의하는 곳 */
+    /* 전역변수 */
+    /*css 변수 개념을 알면 나중에 자바스크립트에 도움됨 */
+    --color: red;
+    --bgColor: skyblue;
+}
+
+.variable {
+    color: var(--color);
+    background: var(--bgColor);
+    /*
+        var():변수실행 함수
+        url(),calc,rgba()
+    */
+}
+
+.var2 {
+    /*
+    지역변수
+    선택자 안에서 변수를 정의하는 것
+    선택자에서만 적용되는 변수 (자손 포함)
+    */
+    --borderColor: violet;
+    border: 2px solid var(--borderColor);
+}
+
+.var3 {
+    /* color: var(--borderColor); */
+    /* 위의 지역 범위 색상을 불러와도 안됨
+    css는 에러디버깅이 안됨 */
+    color: var(--borderColor);
+
+    p {
+        color: var(--textBlue);
+    }
+}
+
+.var4 {
+    /* 지역변수는 선택자 안에서만 사용, var4번에서만 사용 한다. */
+    --textBlue: var(--bgColor);
+    color: var(--textBlue);
+}
+
+.var5 {
+    font-size: var(--fontLarge);
+}
+
+.var6 {
+    --string: dotted;
+    --number: 4px;
+    --color: skyblue;
+    --color2: rgba(0, 0, 0, 0.2);
+    --color3: #777;
+    --calc: calc(var(--number) * 20);
+    /* 더하기는 단위는 둘다 적용 */
+
+    border: var(--number) var(--string) var(--color);
+    background-color: var(--color2);
+    color: var(--color3);
+    font-size: var(--calc);
+}
