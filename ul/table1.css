@@ -97,7 +97,7 @@ table th,와 td 에만 css 가 작동한다.
     }
 }
 
-.color-blue {
+.color-blue1 {
     color: var(--textBlue200);
 
     .table-type1 & {
@@ -124,6 +124,7 @@ table th,와 td 에만 css 가 작동한다.
     display: flex;
     justify-content: center;
     padding: 3.12rem 0 0 0;
+    background: lime;
 
     .show-more1 {
         display: flex;
