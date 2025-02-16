@@ -46,15 +46,29 @@ a {
     --gray800: #111;
     --black: #000;
     --white: #fff;
+
+    /*text*/
+    --grayText1: var(--gray400);
+    --grayText2: var(--black);
+    --grayText3: var(--gray50);
+    --grayText4: var(--gray800);
+
+    /*bg*/
+    --bgWhite: var(--white);
+
+    /*line*/
+    --borderColor1: var(--gray100);
+    --borderColor2: var(--gray800);
+
 }
 
 .table-type1 {
     margin-top: 2.19rem;
 
     thead {
-        border-top: 0.125rem solid var(--gray800);
-        border-bottom: 0.0625rem solid var(--gray100);
-        background: var(--white);
+        border-top: 0.125rem solid var(--borderColor2);
+        border-bottom: 0.0625rem solid var(--borderColor1);
+        background: var(--bgWhite);
 
         th {
             height: 6.4375rem;
@@ -64,24 +78,24 @@ a {
 
     tbody {
         tr {
-            border-bottom: 0.0625rem solid var(--gray100);
+            border-bottom: 0.0625rem solid var(--borderColor1);
         }
 
         tr.last-test td {
-            color: var(--gray800);
+            color: var(--grayText2);
             font-weight: 700;
         }
 
         th {
             padding: 0rem 0.9375rem;
             width: 17.8125rem;
-            color: var(--gray800);
+            color: var(--grayText2);
             font-weight: 700;
         }
 
         td {
             padding: 2.41rem 0;
-            color: var(--gray400);
+            color: var(--grayText1);
             font-family: "Noto Sans KR";
             font-size: 1.125rem;
             font-weight: 400;
@@ -90,7 +104,7 @@ a {
     }
 
     .row-last {
-        color: var(--black);
+        color: var(--grayText2);
         font-family: "Noto Sans KR";
         font-size: 1.125rem;
         font-weight: 700;
@@ -102,7 +116,6 @@ a {
 
 
     .last {
-        color: var(--gray800);
-        font-weight: 700;
+        color: text font-weight: 700;
     }
 }
