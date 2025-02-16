@@ -74,6 +74,7 @@
             <form action="">
                 <fieldset>
                     <legend>게시물검색</legend>
+                    <label for="search-type"></label>
                     <select name="" id="search-type">
                         <option value="">제목</option>
                         <option value="">제목2</option>
@@ -552,6 +553,7 @@
                             😝<input type="radio" name="group" id="d"><label for="d">불만족</label>
                             🤪<input type="radio" name="group" id="e"><label for="e">매우불만족</label>
                         </div>
+                        <label for="opinion"></label>
                         <input type="search" name="opinion" id="opinion" placeholder="여러분의 소중한 의견을 보내주세요"
                             style="width: 240px;"><br><br>
                         <button type="reset">초기화</button>
@@ -686,11 +688,12 @@
                         <li>아이디찾기</li>
                         <li>비밀번호찾기</li>
                     </ul>
-
+                    <label for="enter-id"></label>
                     <input type="text" name="enter-id" id="enter-id" placeholder="이름을 입력해 주세요">
                     <img src="./images/ic_person.svg" alt="">
                     <img src="./images/person2.svg" alt="">
 
+                    <label for="enter-email"></label>
                     <input type="email" name="enter-email" id="enter-email" placeholder="이메일을 입력해주세요.">
                     <img src="./images/mdi_email.svg" alt="">
                     <button type="submit">확인</button>
