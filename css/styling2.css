@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 50%;
+}
+
+a {
+    color: inherit;
+}
+
+:root {
+    --gray100: #D1D1D1;
+    --gray300: #8A8A8A;
+    --gray800: #111;
+    --black: #000;
+    --white: #fff;
+
+    /*text*/
+    --textColor1: var(--black);
+    --textColor2: var(--gray800);
+    --textColor3: var(--gray300);
+
+    /*line*/
+    --lineColor1: var(--gray100);
+    --lineColor2: var(--black);
+    --lineColor3: var(--gray800);
+
+    /*bg*/
+    --bgWhite: var(--bgWhite);
+}
+
+tr.row-top {
+    border-top: 0.0625rem solid var(--lineColor3);
+    border-bottom: 0.0625rem solid var(--lineColor1);
+}
+
+tr.row-middle {
+    border-bottom: 0.0625rem solid var(--lineColor1);
+}
+
+tr.row-bottom {
+    border-bottom: 0.0625rem solid var(--lineColor3);
+}
+
+h3 {
+    margin-bottom: 2.25rem;
+}
+
+.wrap {
+    width: 78.75rem;
+    overflow: hidden;
+    padding: 2.3125rem 3.5625rem;
+    /* background-color: lightsalmon; */
+    border: 2px solid var(--gray300);
+}
+
+.content {
+    width: 100%;
+    height: 25.75rem;
+    /* background-color: cornflowerblue; */
+}
+
+p.support {
+    /* background-color: aqua; */
+    color: var(--textColor3);
+    text-align: right;
+    margin-top: 1.25rem;
+}
+
+.table-group {
+    /* background-color: blueviolet; */
+    width: 100%;
+    display: flex;
+    /* padding: 2.31rem 2.56rem; */
+}
+
+.table {
+    height: 3.125rem;
+    width: 100%;
+    /* background-color: crimson; */
+
+    td {
+        color: var(--textColor1);
+        font-family: "Noto Sans KR";
+        font-size: 0.9375rem;
+        font-weight: 500;
+        line-height: 1.75rem;
+    }
+}
+
+.table1 {
+    margin-right: 2.81rem;
+}
+
+.table tr {
+    width: 34.375rem;
+    height: 3.125rem;
+    padding: 0rem 1.4375rem;
+    align-items: center;
+}
+
+.col1 {
+    /* width: 15.9375rem; */
+    /* background-color: aquamarine; */
+}
+
+td.data {
+    text-align: right;
+    color: var(--textColor2);
+    font-family: "Noto Sans KR";
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
