@@ -5,101 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>숙제3-css 적용</title>
+    <link rel="stylesheet" href="./styling.css">
 </head>
 
 <body>
-    <h2>리스트 3번-결과없음</h2>
-    <nav>
-        <ul>
-            <li><a href="#">전체</a></li>
-            <li><a href="#">알툴즈 제품문의</a></li>
-            <li><a href="#">홈페이지 문의</a></li>
-            <li><a href="#">회원정보문의</a></li>
-            <li><a href="#">결제 문의</a></li>
-            <li><a href="#">제휴 문의</a></li>
-            <li><a href="#">기타 문의</li></a></li>
-        </ul>
-    </nav>
-    <span>
-        <button type="button">제휴카드</button>
-        <button type="button">제휴 쇼핑</button>
-        <button type="button">제휴 서비스</button>
-    </span>
-    <div>
-        <img src="../images/search.svg" alt="">검색 결과가 없습니다.
-    </div><br><br><br>
-
-    <h2>리스트 24번</h2>
-    <h3>신규 패키지</h3>
-    <div>
-        <ul>
-            <li>
-                <div class="picture">
-                    <img src="../images/prd1.png" alt="제품사진1">
-                </div>
-                <ul>
-                    <li>[DIY]네온 홀릭 하트품은 보틀 커버(동영상)</li>
-                    <li>(코바늘) 난이도
-                        <img src="../images/star_on.svg" alt="">
-                        <img src="../images/star_on.svg" alt="">
-                        <img src="../images/star_on.svg" alt="">
-                        <img src="../images/star_off.svg" alt="">
-                        <img src="../images/star_off.svg" alt="">
-                    <li>리뷰:2</li>
-                    <li>8,000원</li>
-                </ul>
-            </li>
-            <li>
-                <div class="picture">
-                    <img src="../images/prd2.png" alt="제품사진2">
-                </div>
-                <ul>
-                    <li>[DIY]코튼10 와플 미니백</li>
-                    <li>(코바늘) 난이도
-                        <img src="../images/star_on.svg" alt="">
-                        <img src="../images/star_on.svg" alt="">
-                        <img src="../images/star_on.svg" alt="">
-                        <img src="../images/star_off.svg" alt="">
-                        <img src="../images/star_off.svg" alt="">
-                    <li>리뷰:10</li>
-                    <li>16,000원</li>
-                </ul>
-            </li>
-            <li>
-                <div class="picture">
-                    <img src="../images/prd3.png" alt="제품사진3">
-                </div>
-                <ul>
-                    <li>[DIY]체이니코튼 토트백</li>
-                    <li>(코바늘) 난이도
-                        <img src="../images/star_on.svg" alt="">
-                        <img src="../images/star_on.svg" alt="">
-                        <img src="../images/star_on.svg" alt="">
-                        <img src="../images/star_off.svg" alt="">
-                        <img src="../images/star_off.svg" alt="">
-                    <li>리뷰:5</li>
-                    <li>12,600원</li>
-                </ul>
-            </li>
-            <li>
-                <div class="picture">
-                    <img src="../images/prd4.png" alt="제품사진4">
-                </div>
-                <ul>
-                    <li>[DIY]까사리아 코바늘 탑다운 와플니트</li>
-                    <li>(코바늘) 난이도
-                        <img src="../images/star_on.svg" alt="">
-                        <img src="../images/star_on.svg" alt="">
-                        <img src="../images/star_on.svg" alt="">
-                        <img src="../images/star_off.svg" alt="">
-                        <img src="../images/star_off.svg" alt="">
-                    <li>리뷰:12</li>
-                    <li>29,000원</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
+    <!-- <h2>리스트 3번-검색결과</h2> -->
+    <div class="wrap">
+        <nav class="menu-type1">
+            <ul>
+                <li><a href="#">전체</a></li>
+                <li><a href="#">알툴즈 제품문의</a></li>
+                <li><a href="#">홈페이지 문의</a></li>
+                <li><a href="#">회원정보문의</a></li>
+                <li><a href="#">결제 문의</a></li>
+                <li><a href="#">제휴 문의</a></li>
+                <li><a href="#">기타 문의</li></a></li>
+            </ul>
+        </nav>
+        <div class="filter-area">
+            <button type="button">제휴카드</button>
+            <button type="button">제휴 쇼핑</button>
+            <button type="button">제휴 서비스</button>
+        </div>
+        <div class="result-area">
+            <div class="result-group">
+                <img src="../images/search.svg" alt="">
+                <p>검색 결과가 없습니다.</p>
+            </div>
+        </div>
+    </div><br><br><br><br><br>
 
 </body>
 
