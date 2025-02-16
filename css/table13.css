@@ -84,7 +84,7 @@ nav {
             font-size: 1.125rem;
             font-weight: 400;
             text-align: center;
-            border: 0.125rem solid var(--borderColor1);
+            border-left: 0.0625rem solid var(--borderColor1);
         }
     }
 
