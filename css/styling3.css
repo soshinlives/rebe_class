@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --textGray: var(--black);
+    --bgWhite: var(--white);
+}
+
+ul.information {
+    margin-top: 0.81rem;
+}
+
+/* 1.타이틀 */
+.title {
+    color: var(--textGray);
+    font-family: "Noto Sans KR";
+    font-size: 0.9375rem;
+    font-weight: 400;
+    margin-bottom: 0.38rem;
+}
+
+/* 2.평가 */
+li.difficulty {
+    display: flex;
+    align-items: center;
+    /* background-color: #FFF000; */
+    padding-top: 0.19rem;
+    margin-bottom: 0.38rem;
+}
+
+span.nanido {
+    color: var(--textGray);
+    font-family: "Noto Sans KR";
+    font-size: 0.8125rem;
+    font-weight: 400;
+    padding-right: 0.62rem;
+    /* background-color: aqua; */
+}
+
+.star-group {
+    display: flex;
+    width: auto;
+    padding-bottom: 0.12rem;
+    /* background-color: blueviolet; */
+    /* align-items: center; */
+}
+
+img.star {
+    width: 0.9375rem;
+    height: 0.9375rem;
+    /* background-color: red; */
+}
+
+/* 3.리뷰 */
+.review {
+    color: var(--textGray);
+    font-family: "Noto Sans KR";
+    font-size: 0.8125rem;
+    font-weight: 400;
+    margin-bottom: 0.38rem;
+    height: 1.375rem;
+}
+
+/* 4.가격 */
+.price {
+    color: var(--textGray);
+    font-family: "Noto Sans KR";
+    font-size: 0.8125rem;
+    font-weight: 400;
+    height: 1.375rem;
+}
+
+.wrap {
+    width: 84.75rem;
+    height: 43.9375rem;
+    padding: 2.75rem 2.4375rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgWhite);
+    border: 1px solid var(--textGray);
+    overflow: hidden;
+}
+
+h3 {
+    color: var(--textGray);
+    font-family: "Noto Sans KR";
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 2.37rem;
+}
+
+.card-group {}
+
+.cardlist-ul {
+    /* background-color: lightcoral; */
+    display: flex;
+    gap: 1.875rem;
+}
+
+span.picture {
+    width: 18.5625rem;
+    height: 25rem;
+}
