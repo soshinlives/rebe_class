@@ -39,8 +39,7 @@ a {
     width: 72.5625rem;
     overflow: hidden;
     padding: 1.25rem;
-    background: var(--gray100);
-    padding: 1.25rem;
+    border: 0.0625rem dotted var(--gray200);
 }
 
 nav.menu-type1 {
@@ -83,7 +82,7 @@ nav.menu-type1 {
     height: 31.25rem;
     padding: 0.625rem;
     background: var(--bgWhite);
-    border: 0.0625rem solid var(--gray400);
+    border: 0.0625rem solid var(--gray200);
     display: flex;
     justify-content: center;
     align-items: center;
