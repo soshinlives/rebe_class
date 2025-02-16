@@ -84,6 +84,7 @@ nav {
             font-size: 1.125rem;
             font-weight: 400;
             text-align: center;
+            border: 0.125rem solid var(--borderColor1);
         }
     }
 
@@ -96,10 +97,12 @@ nav {
 
     .text-right {
         text-align: right;
+        padding: 0rem 0.9375rem;
     }
 
 
     .last {
-        color: text font-weight: 700;
+        color: var(--grayText2);
+        font-weight: 700;
     }
 }
