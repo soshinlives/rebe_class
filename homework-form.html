@@ -337,7 +337,7 @@
                         <h3>문의 유형 및 관심제품을 선택해주세요.</h3>
                         <ul>
                             <li>
-                                <strong>문의유형</strong>
+                                <label for="inquiry-type">문의유형</label>
                                 <select name="inquiry-type" id="inquiry-type">
                                     <option value="">문의 유형을 선택해주세요</option>
                                     <option value="">문의 유형1</option>
@@ -368,18 +368,26 @@
                         <h3>기본정보를 입력해주세요.</h3>
                         <ul>
                             <li>
-                                <strong>기본정보</strong>
+                                <strong>기본정보</strong><br>
+                                <label for="company-name">회사명</label>
                                 <input type="text" name="company-name" id="company-name" placeholder="회사명을 입력해주세요.">
+                                <label for="company-location">회사지역</label>
                                 <select name="" id="company-location">
                                     <option value="choice2">회사지역을 선택해주세요.</option>
                                     <option value="location1">회사지역1</option>
                                     <option value="location2">회사지역2</option>
                                 </select>
+                                <label for="user-name">이름</label>
                                 <input type="text" name="user-name" id="user-name" placeholder="이름(담당자명)을 입력해주세요.">
+                                <label for="position">직함</label>
                                 <input type="text" name="position" id="position" placeholder="직함을 입력해주세요.">
+                                <label for="size">회사규모</label>
                                 <input type="number" name="size" id="size" placeholder="회사규모를 입력해주세요.(ex. 100인 이하)">
+                                <label for="contact">연락처</label>
                                 <input type="tel" name="contact" id="contact" placeholder="연락처를 입력해주세요.">
+                                <label for="email">이메일</label>
                                 <input type="email" name="email" id="email" placeholder="이메일을 입력해주세요.">
+                                <label for="route">방문경로</label>
                                 <input type="text" name="route" id="route" placeholder="방문경로를 선택해주세요.">
                             </li>
                         </ul>
