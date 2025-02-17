@@ -13,12 +13,116 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-    border: none;
-    /* 테이블 전체 테두리 제거 */
 }
 
 a {
     color: inherit;
 }
 
-:root {}
+:root {
+    --grayColor1: #FBFCFD;
+    --grayColor2: #D3D3D3;
+    --grayColor3: #555555;
+    --grayColor4: #45495B;
+    --grayColor5: #111;
+    --grayColor6: #F8FAFC;
+    --black: #000;
+    --blueColor: #0B4D93;
+    --white: #fff;
+
+    /*text*/
+    --textColor111: var(--grayColor5);
+    --textColor555: var(--grayColor3);
+    --textColorfff: var(--white);
+    --textColor000: var(--black);
+
+    /*line*/
+    --lineBlue: var(--blueColor);
+    --lineGray: var(--grayColor2);
+
+    /*bg*/
+    --bgColor1: var(--grayColor6);
+    --bgColor2: var(--grayColor1);
+    --bgColor3: var(--grayColor4);
+}
+
+.bigtitle {
+    width: 100%;
+    align-self: stretch;
+    color: var(--textColor111);
+    font-family: "Noto Sans KR";
+    font-size: 1.0625rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 1.25rem 0;
+    background-color: var(--bgColor1);
+    border-top: 0.125rem solid var(--lineBlue);
+    /* 상단 파란색 라인 */
+    border-bottom: 0.0625rem solid var(--lineGray);
+    /* 하단 라인만 유지 */
+
+}
+
+tr {
+    border-left: none;
+    border-right: none;
+}
+
+th.title-area {
+    width: 17.375rem;
+    background: var(--bgColor2);
+    color: var(--textColor000);
+    padding: 0.53rem 0;
+    border-bottom: 0.0625rem solid var(--lineGray);
+    /* 하단 라인만 유지 */
+}
+
+td.added {
+    color: var(--textColor555);
+    font-family: "Noto Sans KR";
+    font-size: 1.0625rem;
+    font-weight: 400;
+    padding: 0.63rem;
+    border-bottom: 0.0625rem solid var(--lineGray);
+    /* 하단 라인만 유지 */
+}
+
+td.data {
+    color: var(--textColor555);
+    font-family: "Noto Sans KR";
+    font-size: 1.0625rem;
+    font-weight: 400;
+    padding: 0 1.25rem;
+    padding: 0.53rem 1.25rem;
+    border-bottom: 0.0625rem solid var(--lineGray);
+    /* 하단 라인만 유지 */
+}
+
+img {
+    padding-right: 0.31rem;
+}
+
+a.link-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-area {
+    /* background-color: lime; */
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+a.golist {
+    width: 3.625rem;
+    background: var(--bgColor3);
+    color: var(--textColorfff);
+    font-family: "Noto Sans KR";
+    font-size: 1.0625rem;
+    font-weight: 400;
+    padding: 0.34rem 0.81rem;
+    margin-top: 1.25rem;
+    margin-bottom: 2.13rem;
+}
