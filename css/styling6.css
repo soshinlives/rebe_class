@@ -9,16 +9,131 @@ body {
     padding: 5rem;
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    border: none;
-    /* 테이블 전체 테두리 제거 */
-}
-
 a {
     color: inherit;
 }
 
-:root {}
+:root {
+    --grayColor1: #F6F6F6;
+    --grayColor2: #E1E3E6;
+    --grayColor3: #3A3A4A;
+    --grayColor4: #6C6D73;
+    --grayColor5: #44465C;
+    --grayColor6: #BEC2C8;
+    --black: #000;
+    --white: #fff;
+
+    /*text*/
+    --textColor1: var(--grayColor3);
+    --textColor2: var(--grayColor4);
+    --textColor3: var(--black);
+
+    /*line*/
+    --lineColor0: var(--grayColor2);
+    --lineColor1: var(--grayColor5);
+    --lineColor2: var(--grayColor6);
+
+    /*bg*/
+    --bgWhite1: var(--white);
+    --bgWhite2: var(--grayColor1);
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+thead th {
+    padding: 0.78rem 0;
+    background-color: var(--grayColor1);
+    color: var(--textColor1);
+    font-family: "Noto Sans KR";
+    font-size: 0.875rem;
+    font-weight: 400;
+    border-top: 0.125rem solid var(--lineColor1);
+    border-bottom: 0.0625rem solid var(--lineColor2);
+    border-right: 0.0625rem solid var(--lineColor0);
+}
+
+th.last {
+    border-right: none;
+}
+
+tbody tr th {
+    color: var(--textColor1);
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 0.875rem;
+    font-weight: 700;
+    border-right: 0.0625rem solid var(--lineColor0);
+}
+
+tbody tr td {
+    color: var(--textColor1);
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 0.875rem;
+    font-weight: 400;
+    /* border: 1px solid olive; */
+}
+
+tr {
+    border-bottom: 0.0625rem solid var(--lineColor0);
+    border-left: none;
+    border-right: none;
+    color: var(--textColor3);
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+td {
+    padding: 1rem 0;
+    text-align: center;
+    border-right: 0.0625rem solid var(--lineColor0);
+
+    color: var(--textColor3);
+    font-family: "Noto Sans KR";
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+td.last {
+    border-right: none;
+    color: var(--textColor3);
+    font-family: "Noto Sans KR";
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.year {
+    width: 100%;
+    margin-bottom: 0.625rem;
+}
+
+p.percent {
+    text-align: right;
+    margin-bottom: 0.87rem;
+}
+
+.all {
+    width: 62.75rem;
+    height: 28.875rem;
+    overflow: hidden;
+    background: var(--bgWhite1);
+    padding: 2.69rem 3.25rem 2.56rem 3.25rem;
+    border: 0.0625rem solid var(--lineColor1);
+}
