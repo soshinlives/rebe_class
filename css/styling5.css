@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+:root {
+    --grayColor100: #E8E8E8;
+    --grayColor150: #CDCDCD;
+    --black: #000;
+    --white: #fff;
+    --redColor: ##EF4C49;
+    --blueColor: #0056A8;
+
+    /*text*/
+    --textBlack: var(--black);
+    --textBlue: var(--blueColor);
+    --textRed: var(--redColor);
+
+    /*line*/
+    --lineColor1: var(--black);
+    --lineColor2: var(--grayColor100);
+
+    /*bg*/
+    --bgWhite: var(--white);
+}
+
+.wrap {
+    width: 51.625rem;
+    padding: 2.75rem 3.3125rem;
+    /* background-color: #E8E8E8; */
+    border: 0.0625rem solid var(--black);
+}
+
+caption.title {
+    color: var(--textBlack);
+    font-family: "Noto Sans KR";
+    font-size: 1.875rem;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 0.8125rem;
+}
+
+table thead tr {
+    border-top: 0.125rem solid var(--lineColor1);
+    border-bottom: 0.0625rem solid var(--lineColor2);
+}
+
+td {
+    border-bottom: 0.0625rem solid var(--lineColor2);
+}
+
+thead th.title {
+    color: var(--textBlack);
+    font-size: 1.1875rem;
+    font-weight: 500;
+    padding: 1.84rem 0;
+}
+
+.tbody-data td {
+    padding: 1.81rem 0;
+    text-align: center;
+    color: var(--textBlack);
+    font-family: "Noto Sans KR";
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+td.blue {
+    color: var(--textBlue);
+    font-family: "Noto Sans KR";
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+td.red {
+    color: #EF4C49;
+    font-family: "Noto Sans KR";
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.data-wrap {
+    display: flex;
+    width: 6.2375rem;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+}
+
+img {
+    padding-right: 0.3125rem;
+}
