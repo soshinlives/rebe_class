@@ -13,12 +13,55 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-    border: none;
-    /* 테이블 전체 테두리 제거 */
+}
+
+.wrap {
+    overflow: hidden;
+    padding: 2.0625rem 2rem 1.9375rem 2rem;
+    border: 0.0625rem solid var(--lineColor1);
+    padding: 2.06rem 2rem 1.94rem 2rem;
+}
+
+thead.title-area {
+    border-top: 0.125rem solid var(--lineColor1);
+    width: 56.25rem;
+    background-color: var(--bgColor1);
+}
+
+thead tr {}
+
+tr {
+    border-bottom: 0.0625rem solid var(--lineColor3);
+}
+
+tr th {
+    color: var(--textGray5);
+    padding: 0.87rem 0;
 }
 
 a {
     color: inherit;
 }
 
-:root {}
+:root {
+    --grayColor1: #E1E3E6;
+    --grayColor2: #F6F6F6;
+    --grayColor3: #BEC2C8;
+    --grayColor4: #44465C;
+    --grayColor5: #3A3A4A;
+    --black: #000;
+    --white: #fff;
+
+    /*text*/
+    --textBlack: var(--black);
+    --textGray5: var(--grayColor5);
+    --textBlack: var(--black);
+
+    /*line*/
+    --lineColor1: var(--grayColor4);
+    --lineColor2: var(--grayColor3);
+
+    /*bg*/
+    --bgColor1: var(--grayColor2);
+    --bgWhite: var(--white);
+}
