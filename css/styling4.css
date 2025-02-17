@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: none;
+    /* 테이블 전체 테두리 제거 */
+}
+
+a {
+    color: inherit;
+}
+
+:root {
+    --grayColor100: #F6F6F6;
+    --grayColor150: #ECEBEB;
+    --grayColor200: #E9E8E8;
+    --grayColor250: #F6F6F6;
+    --grayColor300: #CCCCCC;
+    --grayColor400: #999999;
+    --grayColor600: #505050;
+    --blackColor: #000000;
+    --darkBlue: #202E5E;
+
+    /*text*/
+    --textColor1: var(--blackColor);
+    --textColor2: var(--grayColor600);
+
+    /*line*/
+    --lineColor1: var(--blackColor);
+    --lineColor2: var(--grayColor150);
+
+    /*bg*/
+    --bgColor: var(--grayColor250);
+}
+
+thead {
+    /* background-color: var(--bgColor); */
+}
+
+tr {
+    border-bottom: 0.0625rem solid var(--lineColor2);
+}
+
+th.th-title {
+    background-color: var(--bgColor);
+    padding: 0.56rem 0;
+    align-items: center;
+
+    border: none;
+    /* 모든 테두리 초기화 */
+    border-top: 0.125rem solid var(--lineColor1);
+    /* 상단 테두리 */
+    border-bottom: 0.0625rem solid var(--lineColor2);
+    /* 하단 테두리 */
+    border-left: 0.0625rem solid var(--lineColor2);
+    /* 좌측 테두리 */
+
+    color: var(--textColor1);
+    font-family: "Noto Sans KR";
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.th-title-last {
+    border-right: none;
+}
+
+td {
+    color: var(--textColor2);
+    font-family: "Noto Sans KR";
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1.41rem 1rem;
+    border: none;
+    /* 모든 테두리 초기화 */
+    border-bottom: 0.0625rem solid var(--lineColor2);
+    /* 하단 테두리 */
+    border-left: 0.0625rem solid var(--lineColor2);
+    /* 좌측 테두리 */
+}
+
+/* 첫 번째 열의 td */
+.border-none {
+    border-left: none !important;
+}
+
+/* 마지막 열의 td */
+.border-none2 {
+    border-right: none !important;
+}
+
+td.third {
+    padding: 0.625rem 0.62rem;
+}
+
+.list {
+    display: flex;
+    gap: 0.31rem;
+    align-items: center;
+    /* background-color: rgba(0, 100, 0, 0.1); */
+}
+
+.list01 {
+    margin-bottom: 0.13rem;
+}
+
+.list_row2 {
+    align-items: start;
+    gap: 0.3125rem;
+}
+
+.text-center {
+    text-align: center;
+}
