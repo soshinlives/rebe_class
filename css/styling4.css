@@ -107,13 +107,21 @@ td.third {
 
 .list {
     display: flex;
-    gap: 0.31rem;
     align-items: center;
     /* background-color: rgba(0, 100, 0, 0.1); */
+    padding-left: 0.62rem;
 }
 
 .list01 {
     margin-bottom: 0.13rem;
+}
+
+.list-space {
+    padding-left: 0.63rem;
+}
+
+.circle_small {
+    padding-right: 0.31rem;
 }
 
 .list_row2 {
