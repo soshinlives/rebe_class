@@ -84,6 +84,7 @@ td.added {
     font-weight: 400;
     padding: 0.63rem;
     border-bottom: 0.0625rem solid var(--lineGray);
+    text-align: left;
     /* 하단 라인만 유지 */
 }
 
@@ -104,7 +105,7 @@ img {
 
 a.link-group {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
