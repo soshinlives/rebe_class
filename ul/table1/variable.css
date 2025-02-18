@@ -1,0 +1,29 @@
+:root {
+    --blue200: #0FA3EA;
+    --blue700: #1A61C7;
+    --gray100: #F1F6FB;
+    --gray300: #DADADA;
+    --black: #000000;
+    --white: #FFFFFF;
+
+    --textBlue200: var(--blue200);
+    --textBlue700: var(--blue700);
+    --textGray100: var(--gray100);
+    --textGray300: var(--gray300);
+    --textBlack: var(--black);
+    --textWhite: var(--white);
+
+    --borderBlue200: var(--blue200);
+    --borderBlue700: var(--blue700);
+    --borderGray100: var(--gray100);
+    --borderGray300: var(--gray300);
+    --borderBlack: var(--black);
+    --borderWhite: var(--white);
+
+    --bgBlue200: var(--blue200);
+    --bgBlue700: var(--blue700);
+    --bgGray100: var(--gray100);
+    --bgGray300: var(--gray300);
+    --bgBlack: var(--black);
+    --bgWhite: var(--white);
+}

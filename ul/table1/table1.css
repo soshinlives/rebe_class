@@ -1,66 +1,20 @@
-/* Reset CSS */
-* {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    box-sizing: border-box;
-    border: none;
-}
-
-body {
-    padding: 5rem;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-}
-
-a {
-    color: inherit;
-}
-
-:root {
-    --blue200: #0FA3EA;
-    --blue700: #1A61C7;
-    --gray100: #F1F6FB;
-    --gray300: #DADADA;
-    --black: #000000;
-    --white: #FFFFFF;
-
-    --textBlue200: var(--blue200);
-    --textBlue700: var(--blue700);
-    --textGray100: var(--gray100);
-    --textGray300: var(--gray300);
-    --textBlack: var(--black);
-    --textWhite: var(--white);
-
-    --borderBlue200: var(--blue200);
-    --borderBlue700: var(--blue700);
-    --borderGray100: var(--gray100);
-    --borderGray300: var(--gray300);
-    --borderBlack: var(--black);
-    --borderWhite: var(--white);
-
-    --bgBlue200: var(--blue200);
-    --bgBlue700: var(--blue700);
-    --bgGray100: var(--gray100);
-    --bgGray300: var(--gray300);
-    --bgBlack: var(--black);
-    --bgWhite: var(--white);
-}
-
 /*
 table, th, td 
 표의 모든 태그에 제공가능한 css
 >> background, color, border
 패딩은 아님. '크기를 조절'하는 것은 넣지마라.
-table th,와 td 에만 css 가 작동한다.
+table th와 td 에만 css 가 작동한다.
 테이블 자체에는 패딩은 안되고 마지만 적용.
-패딩줄려묜 무조건 th, td 에 넣어라.
+패딩 줄려면 무조건 th, td 에 넣어라.
 
 */
+
+.wrap {
+    width: 105.5rem;
+    padding: 6.25rem 7.25rem 6.13rem 7.25rem;
+    border: 0.0625rem dotted #ccc;
+}
+
 .table-type1 {
     thead {
         border-top: 0.125rem solid var(--black);
@@ -115,7 +69,7 @@ table th,와 td 에만 css 가 작동한다.
     text-align: left;
 
     .table-type1 & {
-        /*table-type1이 부모이면 , 20점 */
+        /*table-type1이 부모이면, 20점 */
         text-align: left;
     }
 }
