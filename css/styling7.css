@@ -5,44 +5,6 @@
     box-sizing: border-box;
 }
 
-body {
-    padding: 5rem;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-}
-
-.wrap {
-    overflow: hidden;
-    padding: 2.0625rem 2rem 1.9375rem 2rem;
-    border: 0.0625rem solid var(--lineColor1);
-    padding: 2.06rem 2rem 1.94rem 2rem;
-}
-
-thead.title-area {
-    border-top: 0.125rem solid var(--lineColor1);
-    width: 56.25rem;
-    background-color: var(--bgColor1);
-}
-
-thead tr {}
-
-tr {
-    border-bottom: 0.0625rem solid var(--lineColor3);
-}
-
-tr th {
-    color: var(--textGray5);
-    padding: 0.87rem 0;
-}
-
-a {
-    color: inherit;
-}
-
 :root {
     --grayColor1: #E1E3E6;
     --grayColor2: #F6F6F6;
@@ -64,4 +26,66 @@ a {
     /*bg*/
     --bgColor1: var(--grayColor2);
     --bgWhite: var(--white);
+}
+
+body {
+    padding: 5rem;
+}
+
+a {
+    color: inherit;
+}
+
+.wrap {
+    justify-content: start;
+    width: 60.25rem;
+    padding: 2.0625rem 2rem 1.9375rem 2rem;
+    border: 0.0625rem dotted var(--lineColor1);
+    padding: 2.06rem 2rem 1.94rem 2rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 56.25rem;
+}
+
+
+thead.title-area {
+    border-top: 0.125rem solid var(--lineColor1);
+    width: 56.25rem;
+    background-color: var(--bgColor1);
+}
+
+tr {
+    border-bottom: 0.0625rem solid var(--lineColor3);
+}
+
+tr th {
+    color: var(--textGray5);
+    padding: 0.87rem 0;
+}
+
+.cel-padding-first {
+    width: 12.4375rem;
+    border-bottom: 0.0625rem solid var(--grayColor1);
+    border-right: 0.0625rem solid var(--grayColor1);
+    border-left: none;
+    text-align: center;
+}
+
+.cel-padding {
+    padding: 0.97rem 0.94rem;
+    border-bottom: 0.0625rem solid var(--grayColor1);
+    border-right: 0.0625rem solid var(--grayColor1);
+}
+
+.cel-padding-last {
+    padding: 0.97rem 0.94rem;
+    border-bottom: 0.0625rem solid var(--grayColor1);
+    border-right: none;
+}
+
+h3.table-title {
+    margin-bottom: 1.06rem;
 }
