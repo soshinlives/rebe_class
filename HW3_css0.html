@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숙제3-css적용-표13번</title>
+    <link rel="stylesheet" href="./css/global_table13.css">
+</head>
+
+<body>
+    <h2>표13번-css적용하기</h2>
+    <nav>
+        <h3>재무상태표</h3>
+        <p>단위 : 십억원</p>
+    </nav>
+    <table class="table-type1">
+        <caption>재무상태표</caption>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="2">연결재무상태표</th>
+                <th>2023년</th>
+                <th>2022년</th>
+                <th>2021년</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3">자산</th>
+                <td>유동자산</td>
+                <td class="text-right">5,009.4</td>
+                <td class="text-right">2,929.8</td>
+                <td class="text-right">3,074.5</td>
+            </tr>
+            <tr>
+                <td>비유동자산</td>
+                <td class="text-right">14,908.2</td>
+                <td class="text-right">2,961.9</td>
+                <td class="text-right">2,599.7</td>
+            </tr>
+            <tr class="last-test">
+                <td class="last"><strong>자산총계</strong></td>
+                <td class="text-right">19,917.5</td>
+                <td class="text-right">5,891.7</td>
+                <td class="text-right">5,674.1</td>
+            </tr>
+            <tr>
+                <th rowspan="3">부채</th>
+                <td>유동부채</td>
+                <td class="text-right">2,470.6</td>
+                <td class="text-right">1,294.1</td>
+                <td class="text-right">1,210.5</td>
+            </tr>
+            <tr>
+                <td>비유동부채</td>
+                <td class="text-right">321.2</td>
+                <td class="text-right">323.4</td>
+                <td class="text-right">413.3</td>
+            </tr>
+            <tr class="last-test">
+                <td class="last"><strong>부채총계</strong></td>
+                <td class="text-right">2,791.7</td>
+                <td class="text-right">1,617.4</td>
+                <td class="text-right">1,623.7</td>
+            </tr>
+            <tr>
+                <th rowspan="3">자본</th>
+                <td>자본금</td>
+                <td class="text-right">220.3</td>
+                <td class="text-right">140.8</td>
+                <td class="text-right">137.9</td>
+            </tr>
+            <tr>
+                <td>주식발행초과금</td>
+                <td class="text-right">14,772.0</td>
+                <td class="text-right">853.2</td>
+                <td class="text-right">840.3</td>
+            </tr>
+            <tr class="last-test">
+                <td class="last"><strong>자본총계</strong></td>
+                <td class="text-right">17,125.8</td>
+                <td class="text-right">4,274.2</td>
+                <td class="text-right">4,050.4</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
