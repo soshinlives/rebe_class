@@ -78,7 +78,7 @@ table th와 td 에만 css 가 작동한다.
     display: flex;
     justify-content: center;
     padding: 0;
-    background: lime;
+    /* background: lime; */
 
     .show-more1 {
         display: flex;
