@@ -77,7 +77,7 @@ table th와 td 에만 css 가 작동한다.
 .button-area {
     display: flex;
     justify-content: center;
-    padding: 3.12rem 0 0 0;
+    padding: 0;
     background: lime;
 
     .show-more1 {
