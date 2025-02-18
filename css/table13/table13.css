@@ -1,10 +1,10 @@
 /*표13번-css적용하기*/
 
-table {
+/* table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-}
+} */
 
 h2 {
     margin-bottom: 2rem;
@@ -23,29 +23,6 @@ nav {
         color: var(--gray50);
         font-size: 1rem;
     }
-}
-
-:root {
-    --gray50: #B8B8B8;
-    --gray100: #D2D2D2;
-    --gray400: #666;
-    --gray800: #111;
-    --black: #000;
-    --white: #fff;
-
-    /*text*/
-    --grayText1: var(--gray400);
-    --grayText2: var(--black);
-    --grayText3: var(--gray50);
-    --grayText4: var(--gray800);
-
-    /*bg*/
-    --bgWhite: var(--white);
-
-    /*line*/
-    --borderColor1: var(--gray100);
-    --borderColor2: var(--gray800);
-
 }
 
 .table-type1 {

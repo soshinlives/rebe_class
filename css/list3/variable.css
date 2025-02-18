@@ -1,0 +1,20 @@
+:root {
+    --gray100: #D1D6DB;
+    --gray200: #E5E8EB;
+    --gray400: #8B95A1;
+    --gray600: #333333;
+    --white: #fff;
+    --black: #000;
+
+    /*line*/
+    --lineType: var(--gray100);
+    --btnLine: var(--gray200);
+
+    /*bg*/
+    --bgWhite: var(--white);
+
+    /*text*/
+    --textMenu: var(--gray400);
+    --textTab: var(--gray600);
+    --textSelf: var(--gray400);
+}

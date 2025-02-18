@@ -1,44 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    box-sizing: border-box;
-}
-
-body {
-    padding: 5rem;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 50%;
-}
-
-a {
-    color: inherit;
-}
-
-:root {
-    --gray100: #D1D1D1;
-    --gray300: #8A8A8A;
-    --gray800: #111;
-    --black: #000;
-    --white: #fff;
-
-    /*text*/
-    --textColor1: var(--black);
-    --textColor2: var(--gray800);
-    --textColor3: var(--gray300);
-
-    /*line*/
-    --lineColor1: var(--gray100);
-    --lineColor2: var(--black);
-    --lineColor3: var(--gray800);
-
-    /*bg*/
-    --bgWhite: var(--bgWhite);
-}
+/*표 11번 */
 
 tr.row-top {
     border-top: 0.0625rem solid var(--lineColor3);
@@ -61,8 +21,7 @@ h3 {
     width: 78.75rem;
     overflow: hidden;
     padding: 2.3125rem 3.5625rem;
-    /* background-color: lightsalmon; */
-    border: 2px solid var(--gray300);
+    border: 0.0625rem dotted var(--gray100);
 }
 
 .content {

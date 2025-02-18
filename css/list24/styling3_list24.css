@@ -1,4 +1,6 @@
-* {
+/* list24번 */
+
+/* * {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -17,14 +19,8 @@ table {
 
 a {
     color: inherit;
-}
+} */
 
-:root {
-    --black: #000;
-    --white: #fff;
-    --textGray: var(--black);
-    --bgWhite: var(--white);
-}
 
 ul.information {
     margin-top: 0.81rem;

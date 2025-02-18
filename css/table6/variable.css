@@ -1,0 +1,24 @@
+:root {
+    --grayColor1: #F6F6F6;
+    --grayColor2: #E1E3E6;
+    --grayColor3: #3A3A4A;
+    --grayColor4: #6C6D73;
+    --grayColor5: #44465C;
+    --grayColor6: #BEC2C8;
+    --black: #000;
+    --white: #fff;
+
+    /*text*/
+    --textColor1: var(--grayColor3);
+    --textColor2: var(--grayColor4);
+    --textColor3: var(--black);
+
+    /*line*/
+    --lineColor0: var(--grayColor2);
+    --lineColor1: var(--grayColor5);
+    --lineColor2: var(--grayColor6);
+
+    /*bg*/
+    --bgWhite1: var(--white);
+    --bgWhite2: var(--grayColor1);
+}

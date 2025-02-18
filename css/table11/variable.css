@@ -1,0 +1,20 @@
+:root {
+    --gray100: #D1D1D1;
+    --gray300: #8A8A8A;
+    --gray800: #111;
+    --black: #000;
+    --white: #fff;
+
+    /*text*/
+    --textColor1: var(--black);
+    --textColor2: var(--gray800);
+    --textColor3: var(--gray300);
+
+    /*line*/
+    --lineColor1: var(--gray100);
+    --lineColor2: var(--black);
+    --lineColor3: var(--gray800);
+
+    /*bg*/
+    --bgWhite: var(--bgWhite);
+}

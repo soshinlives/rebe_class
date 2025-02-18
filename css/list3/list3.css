@@ -1,36 +1,14 @@
 /*table 13번*/
-
-h2 {
-    font-size: 1rem;
-    margin-bottom: 3rem;
-}
-
-:root {
-    --gray100: #D1D6DB;
-    --gray200: #E5E8EB;
-    --gray400: #8B95A1;
-    --gray600: #333333;
-    --white: #fff;
-    --black: #000;
-
-    /*line*/
-    --lineType: var(--gray100);
-    --btnLine: var(--gray200);
-
-    /*bg*/
-    --bgWhite: var(--white);
-
-    /*text*/
-    --textMenu: var(--gray400);
-    --textTab: var(--gray600);
-    --textSelf: var(--gray400);
-}
-
 .wrap {
     width: 72.5625rem;
     overflow: hidden;
     padding: 1.25rem;
     border: 0.0625rem dotted var(--gray200);
+}
+
+h2 {
+    font-size: 1rem;
+    margin-bottom: 3rem;
 }
 
 nav.menu-type1 {

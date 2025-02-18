@@ -1,4 +1,4 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -17,28 +17,8 @@ table {
 
 a {
     color: inherit;
-}
+} */
 
-:root {
-    --grayColor100: #E8E8E8;
-    --grayColor150: #CDCDCD;
-    --black: #000;
-    --white: #fff;
-    --redColor: ##EF4C49;
-    --blueColor: #0056A8;
-
-    /*text*/
-    --textBlack: var(--black);
-    --textBlue: var(--blueColor);
-    --textRed: var(--redColor);
-
-    /*line*/
-    --lineColor1: var(--black);
-    --lineColor2: var(--grayColor100);
-
-    /*bg*/
-    --bgWhite: var(--white);
-}
 
 .wrap {
     width: 51.625rem;

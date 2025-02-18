@@ -1,32 +1,9 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     list-style: none;
     box-sizing: border-box;
-}
-
-:root {
-    --grayColor1: #E1E3E6;
-    --grayColor2: #F6F6F6;
-    --grayColor3: #BEC2C8;
-    --grayColor4: #44465C;
-    --grayColor5: #3A3A4A;
-    --black: #000;
-    --white: #fff;
-
-    /*text*/
-    --textBlack: var(--black);
-    --textGray5: var(--grayColor5);
-    --textBlack: var(--black);
-
-    /*line*/
-    --lineColor1: var(--grayColor4);
-    --lineColor2: var(--grayColor3);
-
-    /*bg*/
-    --bgColor1: var(--grayColor2);
-    --bgWhite: var(--white);
-}
+} */
 
 body {
     padding: 5rem;
