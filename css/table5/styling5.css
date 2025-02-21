@@ -65,17 +65,6 @@ td.red {
     align-items: center;
 }
 
-
-.table-type1 {
-    tbody {
-        td {
-            +td {
-                border-left: 0.0625rem solid red;
-            }
-        }
-    }
-}
-
 img {
     padding-right: 0.3125rem;
 }

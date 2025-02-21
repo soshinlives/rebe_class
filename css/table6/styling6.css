@@ -1,22 +1,8 @@
-/* * {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    box-sizing: border-box;
-}
-
-body {
-    padding: 5rem;
-}
-
-a {
-    color: inherit;
-} */
-
-table {
+table.table-type1 {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
+    text-align: center;
 }
 
 thead th {
@@ -31,13 +17,8 @@ thead th {
     border-right: 0.0625rem solid var(--lineColor0);
 }
 
-th.last {
-    border-right: none;
-}
-
 tbody tr th {
     color: var(--textColor1);
-    text-align: center;
     font-family: "Noto Sans KR";
     font-size: 0.875rem;
     font-weight: 700;
@@ -46,19 +27,15 @@ tbody tr th {
 
 tbody tr td {
     color: var(--textColor1);
-    text-align: center;
     font-family: "Noto Sans KR";
     font-size: 0.875rem;
     font-weight: 400;
-    /* border: 1px solid olive; */
 }
 
 tr {
     border-bottom: 0.0625rem solid var(--lineColor0);
-    border-left: none;
     border-right: none;
     color: var(--textColor3);
-    text-align: center;
     font-family: "Noto Sans KR";
     font-size: 0.875rem;
     font-style: normal;
@@ -68,24 +45,20 @@ tr {
 
 td {
     padding: 1rem 0;
-    text-align: center;
     border-right: 0.0625rem solid var(--lineColor0);
 
     color: var(--textColor3);
     font-family: "Noto Sans KR";
     font-size: 0.875rem;
     font-weight: 400;
-    text-align: center;
 }
 
-
 td.last {
-    border-right: none;
     color: var(--textColor3);
     font-family: "Noto Sans KR";
     font-size: 0.875rem;
     font-weight: 400;
-    text-align: center;
+    color: red;
 }
 
 nav {
@@ -100,8 +73,8 @@ nav {
 }
 
 p.percent {
-    text-align: right;
     margin-bottom: 0.87rem;
+    text-align: right;
 }
 
 .all {
