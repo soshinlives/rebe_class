@@ -88,6 +88,7 @@ table th와 td 에만 css 가 작동한다.
         background: var(--bgWhite);
         font-family: "Noto Sans KR";
         font-size: 1.4375rem;
+        cursor: pointer;
 
         .show-more2 {
             color: var(--textBlack);
