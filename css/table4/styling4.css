@@ -41,7 +41,7 @@ tr {
 
 th {
     border: none;
-    padding: 0.56rem 0;
+    padding: 0.56rem 0.56rem;
     align-items: center;
 
     /* 상단 테두리 */

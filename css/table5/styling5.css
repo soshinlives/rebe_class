@@ -1,3 +1,4 @@
+/*표5번*/
 .wrap {
     width: 51.625rem;
     padding: 2.75rem 3.3125rem;
@@ -28,7 +29,7 @@ table {
             color: var(--textBlack);
             font-size: 1.1875rem;
             font-weight: 500;
-            padding: 1.84rem 0;
+            padding: 1.84rem 1rem;
         }
     }
 
@@ -36,7 +37,7 @@ table {
         tr {
             td {
                 border-bottom: 0.0625rem solid var(--lineColor2);
-                padding: 1.81rem 0;
+                padding: 1.81rem 1rem;
                 text-align: center;
                 color: var(--textBlack);
                 font-family: "Noto Sans KR";

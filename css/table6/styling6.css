@@ -1,3 +1,5 @@
+/*표6번*/
+
 table.table-type1 {
     border-collapse: collapse;
     border-spacing: 0;
@@ -6,7 +8,7 @@ table.table-type1 {
 }
 
 thead th {
-    padding: 0.78rem 0;
+    padding: 0.78rem 0.78rem;
     background-color: var(--grayColor1);
     color: var(--textColor1);
     font-family: "Noto Sans KR";
@@ -44,7 +46,7 @@ tr {
 }
 
 td {
-    padding: 1rem 0;
+    padding: 1rem 1rem;
     border-right: 0.0625rem solid var(--lineColor0);
 
     color: var(--textColor3);

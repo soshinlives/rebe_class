@@ -33,7 +33,7 @@ tr {
 
 tr th {
     color: var(--textGray5);
-    padding: 0.87rem 0;
+    padding: 0.87rem 0.87rem;
 }
 
 th {

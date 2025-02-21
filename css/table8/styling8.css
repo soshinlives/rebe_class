@@ -8,12 +8,11 @@ tr {
     border-bottom: 0.0625rem solid var(--lineGray);
 }
 
-
 th {
     width: 17.375rem;
     background: var(--bgColor2);
     color: var(--textColor000);
-    padding: 0.53rem 0;
+    padding: 0.53rem 0.53rem;
     /* 하단 라인만 유지 */
 }
 
@@ -25,7 +24,7 @@ th.bigtitle {
     font-size: 1.0625rem;
     font-weight: 400;
     text-align: center;
-    padding: 1.25rem 0;
+    padding: 1.25rem 1.25rem;
     background-color: var(--bgColor1);
     border-top: 0.125rem solid var(--lineBlue);
     /* 상단 파란색 라인 */
@@ -38,7 +37,7 @@ td.added {
     font-family: "Noto Sans KR";
     font-size: 1.0625rem;
     font-weight: 400;
-    padding: 0.63rem;
+    padding: 0.63rem 0.63rem;
     border-bottom: 0.0625rem solid var(--lineGray);
     text-align: left;
     /* 하단 라인만 유지 */

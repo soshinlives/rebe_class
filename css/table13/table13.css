@@ -31,7 +31,7 @@ nav {
 
     th {
         height: 6.4375rem;
-        padding: 2.41rem 0;
+        padding: 2.41rem 1rem;
     }
 
     tbody {
@@ -45,7 +45,7 @@ nav {
         }
 
         th {
-            padding: 0rem 0.9375rem;
+            padding: 0.9375rem 0.9375rem;
             width: 17.8125rem;
             color: var(--grayText2);
             font-size: 1.125rem;
@@ -67,7 +67,7 @@ nav {
             font-weight: 400;
             text-align: right;
             border-left: 0.0625rem solid var(--borderColor1);
-            padding: 0rem 0.9375rem;
+            padding: 0.9375rem 0.9375rem;
         }
     }
 
