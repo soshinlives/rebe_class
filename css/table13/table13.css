@@ -1,11 +1,5 @@
 /*표13번-css적용하기*/
 
-/* table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-} */
-
 h2 {
     margin-bottom: 2rem;
 }
@@ -17,6 +11,7 @@ nav {
     h3 {
         color: var(--black);
         font-size: 2.5rem;
+        padding-right: 78.06rem;
     }
 
     p {
@@ -27,6 +22,7 @@ nav {
 
 .table-type1 {
     margin-top: 2.19rem;
+    text-align: center;
 
     thead {
         border-top: 0.125rem solid var(--borderColor2);
@@ -53,6 +49,7 @@ nav {
             padding: 0rem 0.9375rem;
             width: 17.8125rem;
             color: var(--grayText2);
+            font-size: 1.125rem;
             font-weight: 700;
         }
 
@@ -77,11 +74,7 @@ nav {
     .text-right {
         text-align: right;
         padding: 0rem 0.9375rem;
+        color: var(--grayText1);
     }
 
-
-    .last {
-        color: var(--grayText2);
-        font-weight: 700;
-    }
 }
