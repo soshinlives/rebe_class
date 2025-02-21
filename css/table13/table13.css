@@ -40,7 +40,7 @@ nav {
             border-bottom: 0.0625rem solid var(--borderColor1);
         }
 
-        tr.last-test td {
+        tr.last-text td {
             color: var(--grayText2);
             font-weight: 700;
         }
