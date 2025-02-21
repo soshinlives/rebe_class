@@ -22,17 +22,16 @@ nav {
 
 .table-type1 {
     margin-top: 2.19rem;
-    text-align: center;
 
     thead {
         border-top: 0.125rem solid var(--borderColor2);
         border-bottom: 0.0625rem solid var(--borderColor1);
         background: var(--bgWhite);
+    }
 
-        th {
-            height: 6.4375rem;
-            padding: 2.41rem 0;
-        }
+    th {
+        height: 6.4375rem;
+        padding: 2.41rem 0;
     }
 
     tbody {
@@ -51,6 +50,13 @@ nav {
             color: var(--grayText2);
             font-size: 1.125rem;
             font-weight: 700;
+            border-left: 0.0625rem solid var(--borderColor1);
+
+        }
+
+        /* 여기에 첫 번째 열의 th에 대한 왼쪽 테두리를 제거하는 스타일 추가 */
+        th[rowspan] {
+            border-left: none;
         }
 
         td {
@@ -59,8 +65,9 @@ nav {
             font-family: "Noto Sans KR";
             font-size: 1.125rem;
             font-weight: 400;
-            text-align: center;
+            text-align: right;
             border-left: 0.0625rem solid var(--borderColor1);
+            padding: 0rem 0.9375rem;
         }
     }
 
@@ -69,12 +76,6 @@ nav {
         font-family: "Noto Sans KR";
         font-size: 1.125rem;
         font-weight: 700;
-    }
-
-    .text-right {
-        text-align: right;
-        padding: 0rem 0.9375rem;
-        color: var(--grayText1);
     }
 
 }
