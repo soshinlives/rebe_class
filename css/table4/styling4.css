@@ -41,10 +41,6 @@ tr {
 
 th {
     border: none;
-}
-
-th.th-title {
-    /* background-color: var(--bgColor); */
     padding: 0.56rem 0;
     align-items: center;
 
