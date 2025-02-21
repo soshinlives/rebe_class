@@ -1,4 +1,23 @@
-.bigtitle {
+.table-type1 {
+    /* text-align: center; */
+    /* border: none; */
+    border: none;
+}
+
+tr {
+    border-bottom: 0.0625rem solid var(--lineGray);
+}
+
+
+th {
+    width: 17.375rem;
+    background: var(--bgColor2);
+    color: var(--textColor000);
+    padding: 0.53rem 0;
+    /* 하단 라인만 유지 */
+}
+
+th.bigtitle {
     width: 100%;
     align-self: stretch;
     color: var(--textColor111);
@@ -10,21 +29,6 @@
     background-color: var(--bgColor1);
     border-top: 0.125rem solid var(--lineBlue);
     /* 상단 파란색 라인 */
-    border-bottom: 0.0625rem solid var(--lineGray);
-    /* 하단 라인만 유지 */
-
-}
-
-tr {
-    border-left: none;
-    border-right: none;
-}
-
-th.title-area {
-    width: 17.375rem;
-    background: var(--bgColor2);
-    color: var(--textColor000);
-    padding: 0.53rem 0;
     border-bottom: 0.0625rem solid var(--lineGray);
     /* 하단 라인만 유지 */
 }
@@ -45,10 +49,7 @@ td.data {
     font-family: "Noto Sans KR";
     font-size: 1.0625rem;
     font-weight: 400;
-    padding: 0 1.25rem;
     padding: 0.53rem 1.25rem;
-    border-bottom: 0.0625rem solid var(--lineGray);
-    /* 하단 라인만 유지 */
 }
 
 img {
