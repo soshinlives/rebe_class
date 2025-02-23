@@ -29,7 +29,7 @@ nav {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.88rem;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     align-items: center;
 }
 
@@ -43,6 +43,7 @@ nav {
     display: grid;
     border: 2px solid #000;
     justify-content: center;
+    align-items: center;
 
     .icon-area {
         background: url(../images/uis-triangle.svg) no-repeat center top 0px;
@@ -61,7 +62,7 @@ nav {
         font-family: "Noto Sans KR";
         font-size: 0.5625rem;
         font-weight: 400;
-        line-height: 0.8125rem;
+        /* line-height: 0.8125rem; */
     }
 }
 
@@ -147,4 +148,71 @@ p.date {
 
     justify-self: end;
     align-self: end;
+}
+
+.pagination {
+    display: flex;
+    gap: 0.56rem;
+
+    .two-buttons {
+        /* display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: -0.06rem; */
+        display: flex;
+    }
+
+    .readall {
+        width: 6.8125rem;
+        height: 1.8125rem;
+        border: 1px solid #C0C0C0;
+        justify-content: center;
+        align-items: center;
+        gap: 0.0625rem;
+        padding: 0.28rem 0.59rem;
+
+        color: #000;
+        font-family: "Noto Sans KR";
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+
+        display: flex;
+        justify-content: space-between;
+
+        background: url(../images/btn_green_arrow.svg) no-repeat right 0.59rem center;
+    }
+}
+
+.goleft {
+    display: flex;
+    width: 1.8125rem;
+    height: 1.8125rem;
+    overflow: hidden;
+    padding: 0.5625rem 0.25rem;
+    border: 1px solid #C0C0C0;
+    justify-content: center;
+    align-items: center;
+    background-color: #005BAC;
+    background: url(../images/btn_left.svg) no-repeat center center;
+    position: relative;
+    /* z-index 사용을 위해 */
+    z-index: 2;
+    /* 더 높은 z-index */
+}
+
+.goright {
+    display: flex;
+    width: 1.8125rem;
+    height: 1.8125rem;
+    overflow: hidden;
+    padding: 0.5625rem 0.25rem;
+    border: 1px solid #C0C0C0;
+    justify-content: center;
+    align-items: center;
+    background-color: #005BAC;
+    background: url(../images/btn_right.svg) no-repeat center center;
+    z-index: 1;
+    /* 더 낮은 z-index */
+    margin-left: -1px;
+    /* 왼쪽 버튼과 겹치게 */
 }
