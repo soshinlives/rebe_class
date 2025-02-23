@@ -1,0 +1,36 @@
+/**reset */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 100%;
+}
+
+:root {}
+
+.grid {
+    display: flex;
+    border: 2px solid darkblue;
+}
+
+.self {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: min-content 1fr 1fr;
+
+    justify-content: center;
+    height: 100vh;
+
+    .item {
+        border: 5px solid seagreen;
+    }
+}

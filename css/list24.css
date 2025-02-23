@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    padding: 5rem;
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrap {
+    width: 84.75rem;
+    height: 43.9375rem;
+    overflow: hidden;
+    padding: 2.75rem 2.4375rem;
+    background: #FFF;
+    justify-content: center;
+    align-items: center;
+    border: 0.0625rem solid #eee;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.87rem;
+    margin-top: 2.38rem;
+    /* 카드 간 간격 */
+}
+
+.card-single {
+    display: grid;
+    gap: 0.81rem;
+}
+
+
+li img {
+    width: 18.5625rem;
+    height: 25rem;
+}
+
+.contents {
+    /* border: 0.0625rem solid seagreen; */
+}
+
+.self {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0.38rem;
+
+    p {
+        /* border: 0.0625rem solid rgb(84, 188, 129); */
+    }
+
+    p.title {
+        color: #000;
+        font-family: "Noto Sans KR";
+        font-size: 0.9375rem;
+        line-height: 1.375rem;
+        font-weight: 400;
+        justify-self: stretch;
+        align-self: stretch;
+    }
+
+    p.difficulty {
+        padding-top: 0.28rem;
+        width: 10.5625rem;
+        background: url(../images/like.svg) no-repeat right 0 center;
+        color: #000;
+        font-family: "Noto Sans KR";
+        font-size: 0.8125rem;
+        font-weight: 400;
+        align-self: stretch;
+    }
+
+    p.review {
+        color: #000;
+        font-family: "Noto Sans KR";
+        font-size: 0.8125rem;
+        line-height: 1.375rem;
+        font-weight: 400;
+        justify-self: stretch;
+        align-self: stretch;
+    }
+
+    p.price {
+        color: #000;
+        font-family: "Noto Sans KR";
+        font-size: 0.8125rem;
+        line-height: 1.375rem;
+        font-weight: 400;
+        justify-self: stretch;
+        align-self: stretch;
+    }
+}
