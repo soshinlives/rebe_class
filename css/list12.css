@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    padding: 5rem;
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --colorBlack: #000;
+    --colorWhite: #fff;
+    --colorGray666: #666;
+    --box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.14);
+}
+
+ul.wrap {
+    width: 82.5rem;
+    padding: 2.4375rem 1.25rem 2.5625rem 1.25rem;
+    background: #fff;
+    /* justify-content: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    border: 0.0125rem solid #eee;
+}
+
+li.btn-area {
+    width: 10rem;
+    height: 9.94rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+span.image {
+    width: 6.25rem;
+    height: 6.25rem;
+    overflow: hidden;
+    border-radius: 2.5rem;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.14);
+}
+
+span.image1 {
+    background: url(../images/list12/01.svg) no-repeat center center;
+}
+
+span.image2 {
+    background: url(../images/list12/02.svg) no-repeat center center;
+}
+
+span.image3 {
+    background: url(../images/list12/03.svg) no-repeat center center;
+}
+
+span.image4 {
+    background: url(../images/list12/04.svg) no-repeat center center;
+}
+
+span.image5 {
+    background: url(../images/list12/05.svg) no-repeat center center;
+}
+
+span.image6 {
+    background: url(../images/list12/06.svg) no-repeat center center;
+}
+
+span.image7 {
+    background: url(../images/list12/07.svg) no-repeat center center;
+}
+
+span.image8 {
+    background: url(../images/list12/08.svg) no-repeat center center;
+}
+
+.text-area {
+    display: grid;
+    height: 2.44rem;
+    grid-template-rows: min-content 1fr;
+    gap: 0.125rem;
+    align-self: stretch;
+    text-align: center;
+}
+
+p.smalltitle {
+    color: #666;
+    font-family: "Noto Sans KR";
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+p.title {
+    color: #000;
+    font-family: "Noto Sans KR";
+    font-size: 1.0625rem;
+    font-weight: 400;
+}
