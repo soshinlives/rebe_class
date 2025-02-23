@@ -1,0 +1,10 @@
+<svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="TriangleFill" clip-path="url(#clip0_13_195)">
+<path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M7.29466 12.2275C7.21424 12.3676 7.09826 12.484 6.95846 12.5649C6.81865 12.6459 6.65996 12.6885 6.49841 12.6885C6.33687 12.6885 6.17818 12.6459 6.03837 12.5649C5.89857 12.484 5.78259 12.3676 5.70216 12.2274L0.130853 2.74801C-0.240459 2.11589 0.205603 1.31232 0.927102 1.31232L12.0705 1.31233C12.7929 1.31233 13.2381 2.1167 12.8668 2.74801L7.29466 12.2275Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_13_195">
+<rect width="13" height="13" fill="white" transform="translate(13 13.5) rotate(-180)"/>
+</clipPath>
+</defs>
+</svg>

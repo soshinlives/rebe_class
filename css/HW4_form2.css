@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    padding: 5rem;
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --colorWhite: #fff;
+    --colorBlack: #000;
+
+    --colorGray100: #F1F6FB;
+    --colorGray200: #DADADA;
+    --colorGray400: #666666;
+    --colorGray500: #333333;
+
+    --colorBlue1: #0FA3EA;
+    --colorBlue2: #1A61C7;
+    --colorBlue3: #F1F6FB;
+
+    --textBody1: 1.25rem;
+    --textLarge: 1.4375rem;
+}
+
+table tr,
+th {
+    font-family: "Noto Sans KR";
+    font-size: 1.25rem;
+}
+
+.txt-base {
+    font-family: "Noto Sans KR";
+    font-size: var(--textBody1);
+    font-weight: 400;
+}
+
+.txt-l {
+    font-family: "Noto Sans KR";
+    font-size: var(--textLarge);
+    /* font-weight: 400; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.56rem 0 0.88rem 0;
+}
+
+.grid1 {
+    display: grid;
+    width: 36.75rem;
+    grid-template-columns: 8.25rem 1fr 5.1875rem;
+    gap: 0.25rem;
+}
+
+legend,
+label {
+    display: none;
+}
+
+thead.head {
+    background-color: var(--colorBlue3);
+    padding: 1.5rem 0.63rem;
+    height: 5.8125rem;
+}
+
+tbody tr {
+    padding: 1.875rem 0.625rem;
+}
+
+.bulletin-list {
+    display: grid;
+    gap: 0;
+
+    li {
+        display: grid;
+        grid-template-columns: 12.375rem 54.6875rem 7.625rem 7.625rem;
+        height: 5.75rem;
+        padding: 2.12rem 0.63rem;
+        gap: 0.625rem;
+        background: var(--colorWhite);
+        align-items: center;
+        border-bottom: 0.0625rem solid var(--colorGray200);
+        background-color: var(--colorWhite);
+    }
+
+    li:first-child {
+        padding: 1.5rem 0.63rem;
+        background-color: var(--colorBlue3);
+        border-top: 0.125rem solid var(--colorBlack);
+        color: var(--colorBlack);
+    }
+
+    .category {
+        color: var(--colorBlue1);
+        font-family: "Noto Sans KR";
+        font-size: var(--textBody1);
+        text-align: center;
+    }
+
+    .category2 {
+        color: var(--colorBlack);
+    }
+
+    .title {
+        color: var(--colorBlack);
+        font-family: "Noto Sans KR";
+        font-size: var(--textBody1);
+        text-align: center;
+    }
+
+    .attached1 {
+        text-align: center;
+    }
+
+    .attached2 {
+        background: url(../images/ic_download.svg) no-repeat center center;
+        width: 7.625rem;
+        /* background-size: 1.5rem; */
+        height: 1.25rem;
+        /* 또는 background-size와 동일한 크기 */
+    }
+
+    .date {
+        color: var(--colorBlack);
+        font-family: "Noto Sans KR";
+        font-size: var(--textBody1);
+        text-align: center;
+    }
+}
+
+button {
+    background-color: var(--colorGray400);
+    color: var(--colorWhite);
+    font-family: "Noto Sans KR";
+    font-weight: 400;
+    font-size: var(--textBody1);
+    padding: 0.97rem 1.44rem;
+    border-radius: 0.5rem;
+}
+
+input,
+.selectbox {
+    border-radius: 0.5rem;
+    border: 1px solid var(--colorGray200);
+    padding: 0.94rem 1.25rem;
+}
+
+.selectbox {
+    width: 8.25rem;
+    display: grid;
+    padding: 0.9375rem 1rem;
+    background: url(../images/ic_open.svg) no-repeat right 1rem center;
+    justify-content: start;
+    align-items: center;
+    gap: 3.125rem;
+}
+
+.readmore {
+    width: 100%;
+    text-align: center;
+    padding-top: 3.12rem;
+    font-weight: 700;
+
+    a {
+        color: black;
+        font-weight: 700;
+
+        span.num {
+            color: #1A61C7;
+            font-weight: 700;
+        }
+    }
+
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숙제4-display:grid적용</title>
+    <link rel="stylesheet" href="./css/HW4_form2.css">
+</head>
+
+<body>
+    <nav>
+        <p class="txt-base">총<span>488</span>건</p>
+        <form action="">
+            <fieldset class="grid1">
+                <legend>게시물검색</legend>
+                <label for="search-type">제목</label>
+                <div class="txt-base selectbox">
+                    <span>제목1</span>
+                </div>
+                <input type="search" name="search-keyword" id="search-keyword" placeholder="검색어를 입력해 주세요."
+                    class="txt-base">
+                <button type="submit" class="txt-base">검색</button>
+            </fieldset>
+        </form>
+    </nav>
+    <ul class="bulletin-list">
+        <li>
+            <div class="category category2 txt-base">구분</div>
+            <div class="title txt-base">제목</div>
+            <div class="attached1 txt-base">첨부</div>
+            <div class="date txt-base">등록일</div>
+        </li>
+        <li>
+            <div class="category txt-base">공지</div>
+            <div class="title txt-base">[채용공고] 채권운용본부 크레딧애널리스트 경력직 채용1</div>
+            <div class="attached2 txt-base"></div>
+            <div class="date txt-base">2024-04-19</div>
+        </li>
+        <li>
+            <div class="category txt-base">공지</div>
+            <div class="title txt-base">[채용공고] 채권운용본부 크레딧애널리스트 경력직 채용2</div>
+            <div class="attached2 txt-base"></div>
+            <div class="date txt-base">2024-04-19</div>
+        </li>
+        <li>
+            <div class="category txt-base">공지</div>
+            <div class="title txt-base">[채용공고] 채권운용본부 크레딧애널리스트 경력직 채용3</div>
+            <div class="attached2 txt-base"></div>
+            <div class="date txt-base">2024-04-19</div>
+        </li>
+    </ul>
+    <div class="readmore">
+        <a href="#">
+            <div clas="more" class="txt-l">
+                더보기<strong>(<span class="num">10</span>/488)</strong>
+            </div>
+        </a>
+    </div>
+    <br>
+</body>
+
+</html>
