@@ -29,6 +29,11 @@
         .small-text {
             font-size: 12px;
         }
+
+        .grid {
+            display: grid;
+            grid-template-rows: min-content, 1fr;
+        }
     </style>
 </head>
 
@@ -36,60 +41,82 @@
     <h2>숙제</h2>
     <ul>
         <li><a href="./HW1_list.html">숙제1: List</a></li>
-        <li><a href="./HW1_table.html">숙제1: Table</a></li><br>
+        <li><a href="./HW1_table.html">숙제1: Table</a></li>
     </ul>
 
     <ul>
         <li><a href="./HW2_form.html">
                 숙제2: Form-수정해서 다시 제출
             </a>
-        </li><br>
+        </li>
     </ul>
 
     <ul>
-        <li><a href="./ul/table1.html">숙제3: 스타일적용-표1번(더보기 버튼) <span class="small-text">(수정해서 새로 업로드)</span></a></li>
-        <li><a href="./HW3_css4.html">숙제3: 스타일적용-표4번 <span class="small-text">(수정해서 새로 업로드)</span></a></li><br>
-        <li><a href="./HW3_css5.html">숙제3: 스타일적용-표5번 <span class="small-text">(수정해서 새로 업로드)</span></a></li><br>
-        <li><a href="./HW3_css6.html">숙제3: 스타일적용-표6번 <span class="small-text">(수정해서 새로 업로드)</span></a></li><br>
-        <li><a href="./HW3_css7.html">숙제3: 스타일적용-표7번 <span class="small-text">(수정해서 새로 업로드)</span></a></li><br>
-        <li><a href="./HW3_css8.html">숙제3: 스타일적용-표8번 <span class="small-text">(수정해서 새로 업로드)</span></a></li><br>
-        <li><a href="./HW3_css2.html">숙제3: 스타일적용-표11번 <span class="small-text">(수정해서 새로 업로드)</span>, 질문있음</a></li><br>
-        <li><a href="./HW3_css0.html">숙제3: 스타일적용-표13번 <span class="small-text">(수정해서 새로 업로드)</span></a></li><br>
-        <li><a href="./HW3_css1.html">숙제3: 스타일적용-리스트3번 <span class="small-text">(수정해서 새로 업로드)</span></a></li><br>
-        <li><a href="./HW3_css3.html">숙제3: 스타일적용-리스트24번 <span class="small-text">(수정해서 새로 업로드)</span></a></li>
-    </ul><br>
+        <li>
+            <details>
+                <summary class="body-text">숙제3: 스타일적용 10개</summary>
+                <ul class="grid">
+                    <li><a href="./ul/table1.html">숙제3: 스타일적용-표1번<span class="small-text">(수정해서 새로
+                                업로드)</span></a>
+                    </li>
+                    <li><a href="./HW3_css4.html">숙제3: 스타일적용-표4번 <span class="small-text">(수정해서 새로 업로드)</span></a>
+                    </li>
+                    <li><a href="./HW3_css5.html">숙제3: 스타일적용-표5번 <span class="small-text">(수정해서 새로 업로드)</span></a>
+                    </li>
+                    <li><a href="./HW3_css6.html">숙제3: 스타일적용-표6번 <span class="small-text">(수정해서 새로 업로드)</span></a>
+                    </li>
+                    <li><a href="./HW3_css7.html">숙제3: 스타일적용-표7번 <span class="small-text">(수정해서 새로 업로드)</span></a>
+                    </li>
+                    <li><a href="./HW3_css8.html">숙제3: 스타일적용-표8번 <span class="small-text">(수정해서 새로 업로드)</span></a>
+                    </li>
+                    <li><a href="./HW3_css2.html">숙제3: 스타일적용-표11번 <span class="small-text">(수정해서 새로
+                                업로드),질문있음</span></a>
+                    </li>
+                    <li><a href="./HW3_css0.html">숙제3: 스타일적용-표13번 <span class="small-text">(수정해서 새로 업로드)</span></a>
+                    </li>
+                    <li><a href="./HW3_css1.html">숙제3: 스타일적용-리스트3번 <span class="small-text">(수정해서 새로 업로드)</span></a>
+                    </li>
+                    <li><a href="./HW3_css3.html">숙제3: 스타일적용-리스트24번 <span class="small-text">(수정해서 새로
+                                업로드)</span></a>
+                    </li>
+                </ul>
+            </details>
+        </li>
+    </ul>
 
     <h2>과정1&2-기초문법</h2>
-    <ul class="html">
-        <li><a href="./ul/table1.html">1.Text</a></li>
-        <li><a href="./02_link.html">1.Link</a></li>
-        <li><a href="./03_list.html">1.List</a></li>
-        <li><a href="./04_video.html">1.Video</a></li>
-        <li><a href="./05_picture.html">1.Picture</a></li><br>
-        <li><a href="./06_table.html">1.Table</a></li>
+    <ul class="html grid">
+        <h3 class="">1강</h3>
+        <li><a href="./ul/table1.html">Text</a></li>
+        <li><a href="./02_link.html">Link</a></li>
+        <li><a href="./03_list.html">List</a></li>
+        <li><a href="./04_video.html">Video</a></li>
+        <li><a href="./05_picture.html">Picture</a></li>
+        <li><a href="./06_table.html">Table</a></li>
 
-        <li><a href="./07_form.html">2.Form</a></li>
-        <li><a href="./08_detail.html">2.Detail</a></li>
-        <li><a href="./09_popover.html">2.Popover</a></li>
-        <li><a href="./10_css.html">2.CSS적용</a></li><br>
+        <h3>2강</h3>
+        <li><a href="./07_form.html">Form</a></li>
+        <li><a href="./08_detail.html">Detail</a></li>
+        <li><a href="./09_popover.html">Popover</a></li>
+        <li><a href="./10_css.html">CSS적용</a></li>
 
-        <li><a href="./ul/list1.html">3.CSS적용-리스트 1번</a></li>
-        <li><a href="./ul/list16.html">3.CSS적용-리스트 16번</a></li>
-        <li><a href="./ul/table1.html">3.CSS적용-표1번!</a></li>
-        <li><a href="./ul/table3.html">3.CSS적용-표3번</a></li>
-        <li><a href="./ul/table13.html">3.CSS적용-표13번</a></li>
+        <h3>4강</h3>
+        <li><a href="./ul/list1.html">CSS적용-리스트 1번</a></li>
+        <li><a href="./ul/list16.html">CSS적용-리스트 16번</a></li>
+        <li><a href="./ul/table1.html">CSS적용-표1번</a></li>
+        <li><a href="./ul/table3.html">CSS적용-표3번</a></li>
+        <li><a href="./ul/table13.html">CSS적용-표13번</a></li>
     </ul><br>
 
     <h2>과정3: 응용실습</h2>
-    <ul>
-        <li><a href="./ul/list1.html">list1.html</a><br></li>
-        <li><a href="./ul/list16.html">list16.html</a><br></li>
-        <li><a href="./ul/list4.html">list4.html</a><br></li>
-        <li><a href="./ul/list10.html">list10.html</a><br></li><br><br>
-        <li><a href="./ul/list14.html">list14.html</a><br></li><br><br>
-
-        <li><a href="./ul/table1.html">table1.html</a><br></li>
-        <li><a href="./ul/table3.html">table3.html</a><br></li>
+    <ul class="grid">
+        <li><a href="./ul/list1.html">list1.html</a></li>
+        <li><a href="./ul/list16.html">list16.html</a></li>
+        <li><a href="./ul/list4.html">list4.html</a></li>
+        <li><a href="./ul/list10.html">list10.html</a></li>
+        <li><a href="./ul/list14.html">list14.html</a></li>
+        <li><a href="./ul/table1.html">table1.html</a></li>
+        <li><a href="./ul/table3.html">table3.html</a></li>
     </ul>
 </body>
 
