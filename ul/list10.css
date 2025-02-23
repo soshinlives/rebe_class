@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+html {
+    font-size: 100%;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --gray100: #ecf5fe;
+    --gray200: #212529;
+
+    --blue100: #32a2db;
+    --blue200: #0067ab;
+    --blue300: #253a72;
+    --blue400: #4e5d9d;
+    --blue500: #737db4;
+    --blue600: #97a5d3;
+}
+
+body {
+    padding: 5rem;
+    font-size: 100%;
+}
+
+/* .text-2xl {} */
+
+.text-xl {
+    font-size: 3.625rem;
+}
+
+.text-lg {
+    font-size: 2.125rem;
+}
+
+.text-base {
+    font-size: 1.75rem;
+}
+
+/* 
+.text-sm {}
+
+.text-xs {}
+
+.text-2xs {}
+
+.text-3xs {} */
+
+.circle {
+    display: block;
+    border: 0.69rem solid var(--blue100);
+    width: 10.8rem;
+    height: 10.8rem;
+    /*strong은 인라인*/
+    border-radius: 100rem;
+    text-align: center;
+    align-content: center;
+    /*인라인요소, 인라인요소에만 먹는다.flex, grid 아님.*/
+    background: var(--gray100);
+    padding: 0.69rem;
+    background-clip: content-box;
+    /*배경색의 채움의 범위 지정 (패딩, 선, 컨텐츠 까지) */
+}
+
+.gray200 {
+    color: var(--gray200);
+}
+
+.principle {
+    li {
+        display: grid;
+        /*기본이 1fr이다. 열 하나*/
+        grid-template-columns: 10.8rem 1fr;
+        gap: 3.5rem;
+        align-items: center;
+        /*부모에 지정해주는, 자신을 통제하는 개념 */
+    }
+
+    .text-base {
+        /* align-self: center; */
+        /*자식을 바로 지정하고 자리를 잡는개념*/
+    }
+}

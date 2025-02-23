@@ -1,0 +1,53 @@
+.background {
+    height: 300px;
+    border: 2px solid salmon;
+    /* background: url(../images/prd4.png) no-repeat right 3rem bottom 6rem / 100px auto skyblue; */
+    background: url(../images/prd4.png) no-repeat 0 0 / 100px auto skyblue;
+
+    /*색은 무조건 마지막이 쓴다.*/
+    /*사진, 좌표가 있어야한다 */
+    /* /를 주려면 반드시 좌표값을 주어야한다. */
+    /* background-image: url(../images/17_picture_1.png); */
+
+    /* background-image: url(../images/prd4.png);
+    background-repeat: no-repeat;
+    background-position: right 3rem bottom 6rem;
+    background-size: 100px auto;
+    background-color: sandybrown; */
+
+    /* background-size: 200px 200px; */
+    /* background-size: cover; */
+    background-size: contain;
+}
+
+.background2 {
+    height: 300px;
+    border: 5px solid red;
+    background: url(../images/prd3.png) no-repeat 0 0, url(../images/22_pic3.png) no-repeat right 0 top 2rem / 200px auto;
+}
+
+/*
+이미지를 표현하는 방법
+1.<img>
+2.background
+
+언제 img tag를 쓰고 언제 background를 써야하는지...
+
+<img>
+-사용자(관리자)가 업로드하는 것
+-개발에서 데이터화되는 것
+-css관점에서 이미지 크기에 따라서 부모가 같이 커져야 하는 경우
+
+background
+-아이콘, 블릿, 디자인 이미지
+
+*/
+
+.gradient {
+    height: 300px;
+    margin-block: 2rem;
+    border: 5px solid seagreen;
+    /* background: linear-gradient(to right, red 100px, orange 250px, pink); */
+    /* background: linear-gradient(45deg, red 100px, orange 250px, pink); */
+    background: linear-gradient(to right, silver 200px, lightblue 200px);
+}

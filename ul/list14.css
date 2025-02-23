@@ -1,0 +1,100 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    padding: 2rem;
+    font-size: 100%;
+}
+
+:root {
+    --green: #20c85a;
+    --gray100: #e8e8e8;
+    --gray200: #bcbcbc;
+    --gray300: #b8b8b8;
+    --gray400: #686868;
+    --gray500: #111111;
+    --black: #000000;
+    --white: #fff;
+
+}
+
+.green {
+    color: var(--green);
+}
+
+.gray100 {
+    color: var(--gray100);
+}
+
+.gray200 {
+    color: var(--gray200);
+}
+
+.gray300 {
+    color: var(--gray300);
+}
+
+.gray400 {
+    color: var(--gray400);
+}
+
+.gray500 {
+    color: var(--gray500);
+}
+
+.text-xl {
+    font-family: "Noto Sans KR";
+    font-size: 1.1875rem;
+    font-weight: 500;
+}
+
+.text-base {
+    font-family: "Noto Sans KR";
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.text-sm {
+    font-family: "Noto Sans KR";
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.principle {
+    border-top: 1px solid var(--gray100);
+
+    li {
+        background: url(../images/arrow-sv.svg) no-repeat right 2.88rem center;
+        padding: 2rem 0;
+        display: grid;
+        grid-template-columns: 9.625rem 1fr;
+        gap: 7.19rem;
+        align-items: center;
+        /* border-top: 1px solid var(--gray100); */
+        border-bottom: 1px solid var(--gray100);
+    }
+
+    .green {
+        text-align: center;
+    }
+}
+
+.right {
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: min-content 1fr;
+}
+
+a {
+    text-decoration: none;
+}

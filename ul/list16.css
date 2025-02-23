@@ -1,3 +1,4 @@
+/* Reset CSS */
 * {
     padding: 0;
     margin: 0;
@@ -6,123 +7,162 @@
     border: none;
 }
 
-/* 변수정의 */
+body {
+    padding: 2rem;
+}
+
 :root {
-    --gray100: #F0F1F2;
-    --gray200: #EDEEF0;
-    --gray300: #BBBBBB;
-    --gray400: #9FA19F;
+    --gray100: #f0f1f2;
+    --gray200: #edeef0;
+    --gray300: #bbbbbb;
+    --gray400: #9fa19f;
     --gray500: #555555;
     --gray600: #333333;
+    --white: #fff;
+    --black: #000;
 
-    --blue400: #1090FD;
-    --blue900: #123A8E;
+    --blue400: #1090fd;
+    --blue900: #123a8e;
 
-    --white: #ffffff;
-
-    /*선 정의*/
-    --borderGray100: var(--gray100);
-    --borderGray300BBB: var(--gray300);
-    --boderGray500: var(--gray500);
-
-    /*텍스트 정의*/
-    --textGray1: var(--gray600);
-    --textGray2: var(--gray300);
-    --textGray3: var(--gray400);
+    --textGray100: var(--gray100);
+    --textGray200: var(--gray200);
+    --textGray300: var(--gray300);
+    --textGray400: var(--gray400);
+    --textGray500: var(--gray500);
+    --textGray600: var(--gray600);
+    --textBlue400: var(--blue400);
+    --textBlue900: var(--blue900);
     --textWhite: var(--white);
+    --textBlack: var(--black);
 
-    /*배경 정의*/
-    --bgColor: var(--white);
-    --bgColor2: var(--blue400);
-    --bgColor3: var(--blue900);
+    --borderGray100: var(--gray100);
+    --borderGray200: var(--gray200);
+    --borderGray300: var(--gray300);
+    --borderGray400: var(--gray400);
+    --borderGray500: var(--gray500);
+    --borderGray600: var(--gray600);
+    --borderBlue400: var(--blue400);
+    --borderBlue900: var(--blue900);
+    --borderWhite: var(--white);
+    --borderBlack: var(--black);
 
-    /*그림자 정의*/
-    --shadowType1: box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    --bgGray100: var(--gray100);
+    --bgGray200: var(--gray200);
+    --bgGray300: var(--gray300);
+    --bgGray400: var(--gray400);
+    --bgGray500: var(--gray500);
+    --bgGray600: var(--gray600);
+    --bgBlue400: var(--blue400);
+    --bgBlue900: var(--blue900);
+    --bgWhite: var(--white);
+    --bgBlack: var(--black);
+
+    --shadowType1: 2px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
-.title1 {
-    color: var(--gray600);
+.text-type1 {
+    color: var(--textGray600);
     font-family: "Noto Sans KR";
     font-size: 0.875rem;
-    font-weight: 400;
 }
 
-.title2 {
-    color: var(--gray400);
+.text-type2 {
+    color: var(--textGray400);
     font-family: "Noto Sans KR";
     font-size: 0.8125rem;
-    font-weight: 400;
 }
 
-.title3 {
-    color: var(--gray600);
+.text-type3 {
+    color: var(--textGray600);
     font-family: "Noto Sans KR";
     font-size: 0.8125rem;
-    font-weight: 400;
 }
 
-.price1 {
-    color: #9FA19F;
+.text-type4 {
+    color: var(--textGray400);
     font-family: "Noto Sans KR";
     font-size: 0.875rem;
-    font-weight: 400;
-    text-decoration-line: strikethrough;
 }
 
-.price2 {
-    color: #333;
+.text-type5 {
+    color: var(--textGray600);
     font-family: "Noto Sans KR";
     font-size: 0.9375rem;
-    font-weight: 700;
 }
 
-.explain {
-    width: 34.375rem;
-    color: var(--textGray1);
+.text-type6 {
+    color: var(--textGray600);
     font-family: "Noto Sans KR";
     font-size: 0.8125rem;
-    font-weight: 400;
-    line-height: 1.0625rem;
-    /* 130.769% */
 }
 
-.button1 {
-    width: 8.75rem;
-    height: 2.5rem;
-    padding: 0.625rem;
-    background: var(--blue400);
-    gap: 0.625rem;
-
+.btn-blue-400 {
     color: var(--textWhite);
     font-family: "Noto Sans KR";
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.0625rem;
-}
-
-.button2 {
     width: 8.75rem;
     height: 2.5rem;
     padding: 0.625rem;
-    background: var(--blue900);
+    background: var(--bgBlue400);
+}
 
+.btn-blue-900 {
     color: var(--textWhite);
     font-family: "Noto Sans KR";
+    width: 8.75rem;
+    height: 2.5rem;
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.0625rem;
+    padding: 0.625rem;
+    background: var(--bgBlue900);
 }
 
-.button3 {
-    width: 8.75rem;
-    height: 2.5rem;
-    padding: 0.625rem;
-    border: 2px solid #555;
-    background: var(--bgColor);
-
-    color: var(--textGray1);
+.btn-white {
+    color: var(--textGray600);
     font-family: "Noto Sans KR";
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.0625rem;
+    width: 8.75rem;
+    height: 2.5rem;
+    padding: 0.625rem;
+    border: 2px solid var(--borderGray500);
+    background: var(--bgWhite);
+}
+
+.item {
+    border: 1px solid var(--borderGray100);
+    box-shadow: var(--shadowType1);
+    padding: 1.625rem 1.875rem;
+    display: grid;
+    grid-template-columns: 0.9375rem 9.25rem 1fr 11.69rem;
+    grid-template-rows: min-content min-content min-content min-content 1fr;
+    gap: 0.31rem 0.6rem;
+
+    .checkbox {
+        grid-row: 1/6;
+        /*행을 병합한다.*/
+    }
+
+    .thumbnail {
+        grid-row: 1/6;
+        /* padding-right: 1.25rem; */
+    }
+
+    .btn-group {
+        grid-column: 4/5;
+        grid-row: 1/6;
+        justify-content: end;
+        align-self: end;
+        /* text-align: right; */
+        display: grid;
+        gap: 0.31rem;
+    }
+
+    .text-type6 {
+        align-self: end;
+    }
 }

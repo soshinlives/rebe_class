@@ -1,0 +1,65 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 5rem;
+}
+
+/* :root {} */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    /*자식을 정렬하는데 여백을 나눠 갖는다.*/
+}
+
+.buttons {
+    display: flex;
+}
+
+.news-list {
+    display: grid;
+    gap: 1.2rem;
+
+    li {
+        display: grid;
+        /* 텍스트를 정렬하므로 li를 부모로한다.*/
+        grid-template-columns: 14rem 1fr 9rem;
+
+        gap: 1rem;
+        height: 12rem;
+        padding: 0rem 5rem;
+        border-radius: 1.2rem;
+        background: #F1F7FA;
+        align-items: center;
+    }
+
+    .category {
+        color: #101010;
+        font-size: 1.7rem;
+    }
+
+    .title {
+        font-size: 2.1rem;
+    }
+
+    .date {
+        color: #666;
+        font-size: 1.8rem;
+
+    }
+}
+
+/* 
+gab>>flex,
+grid에만 들어간다. */

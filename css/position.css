@@ -1,0 +1,109 @@
+.position {
+    border: 3px solid saddlebrown;
+    width: 200px;
+    aspect-ratio: 1;
+
+    >div {
+        width: 80px;
+        aspect-ratio: 1;
+    }
+
+    .child1 {
+        background: seagreen;
+    }
+
+    .child2 {
+        background: skyblue;
+    }
+}
+
+.relative {
+    position: relative;
+    left: 40px;
+    top: 40px;
+}
+
+.absolute {
+    position: relative;
+
+    .parent {
+        border: 4px solid red;
+        margin: 0px;
+        position: fixed;
+        /* relative, fixed, sticky 부모와 별개이다. */
+        left: 0;
+        top: 0;
+    }
+
+    /* 뷰포트 기준으로 배치, 스크롤과 상관없다. */
+    .child1 {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        /* 부모를 기준으로 움직인다.*/
+    }
+}
+
+.fixed {
+    border: 8px solid salmon;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.sticky {
+    border: 5px solid fuchsia;
+    position: sticky;
+    top: 0;
+    /*스크롤 했을때, 해당 오브젝트가 맞닿았을때*/
+}
+
+.zindex {
+    position: relative;
+
+    .child1 {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: 10;
+        /* 부모들 중에 z-index가 낮은 아이가 있으면 안된다.*/
+
+        div {
+            position: absolute;
+            z-index: 10000;
+            background-color: springgreen;
+            width: 50%;
+            height: 50%;
+        }
+    }
+
+    .child2 {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        z-index: 11;
+    }
+
+    .child3 {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        background-color: salmon;
+    }
+}
+
+.inset {
+    position: relative;
+
+    .child1 {
+        position: absolute;
+        /* left: 10px;
+        right: 10px;
+        top: 10px;
+        bottom: 10px; */
+        width: auto;
+        aspect-ratio: initial;
+
+        inset: 10px 20px 30px 40px;
+    }
+}
