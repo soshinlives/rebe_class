@@ -73,6 +73,10 @@ body {
 }
 
 .principle {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2.62rem;
+
     li {
         display: grid;
         /*기본이 1fr이다. 열 하나*/
@@ -85,5 +89,10 @@ body {
     .text-base {
         /* align-self: center; */
         /*자식을 바로 지정하고 자리를 잡는개념*/
+        color: #212529;
+        font-family: "Noto Sans KR";
+        font-size: 1.75rem;
+        font-weight: 400;
+        letter-spacing: -0.0175rem;
     }
 }
