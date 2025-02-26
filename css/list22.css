@@ -155,13 +155,10 @@ p.date {
     gap: 0.56rem;
 
     .two-buttons {
-        /* display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: -0.06rem; */
         display: flex;
     }
 
-    .readall {
+    a.readall {
         width: 6.8125rem;
         height: 1.8125rem;
         border: 1px solid #C0C0C0;
@@ -181,38 +178,45 @@ p.date {
 
         background: url(../images/btn_green_arrow.svg) no-repeat right 0.59rem center;
     }
+
+    a.goleft {
+        display: flex;
+        width: 1.8125rem;
+        height: 1.8125rem;
+        overflow: hidden;
+        padding: 0.5625rem 0.25rem;
+        border: 1px solid #C0C0C0;
+        justify-content: center;
+        align-items: center;
+        background-color: #005BAC;
+        background: url(../images/btn_left.svg) no-repeat center center;
+        position: relative;
+        /* z-index 사용을 위해 */
+        z-index: 2;
+        /* 더 높은 z-index */
+    }
+
+    a.goright {
+        display: flex;
+        width: 1.8125rem;
+        height: 1.8125rem;
+        overflow: hidden;
+        padding: 0.5625rem 0.25rem;
+        border: 1px solid #C0C0C0;
+        justify-content: center;
+        align-items: center;
+        background-color: #005BAC;
+        background: url(../images/btn_right.svg) no-repeat center center;
+        z-index: 1;
+        /* 더 낮은 z-index */
+        margin-left: -1px;
+        /* 왼쪽 버튼과 겹치게 */
+    }
 }
 
-.goleft {
-    display: flex;
-    width: 1.8125rem;
-    height: 1.8125rem;
-    overflow: hidden;
-    padding: 0.5625rem 0.25rem;
-    border: 1px solid #C0C0C0;
-    justify-content: center;
-    align-items: center;
-    background-color: #005BAC;
-    background: url(../images/btn_left.svg) no-repeat center center;
-    position: relative;
-    /* z-index 사용을 위해 */
-    z-index: 2;
-    /* 더 높은 z-index */
-}
-
-.goright {
-    display: flex;
-    width: 1.8125rem;
-    height: 1.8125rem;
-    overflow: hidden;
-    padding: 0.5625rem 0.25rem;
-    border: 1px solid #C0C0C0;
-    justify-content: center;
-    align-items: center;
-    background-color: #005BAC;
-    background: url(../images/btn_right.svg) no-repeat center center;
-    z-index: 1;
-    /* 더 낮은 z-index */
-    margin-left: -1px;
-    /* 왼쪽 버튼과 겹치게 */
+.pagination a.readall,
+.pagination a.goleft,
+.pagination a.goright {
+    text-decoration: none;
+    cursor: pointer;
 }
