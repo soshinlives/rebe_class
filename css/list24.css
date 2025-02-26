@@ -38,6 +38,15 @@ a {
     /* 카드 간 간격 */
 }
 
+.card-link {
+    cursor: pointer;
+}
+
+.img-container {
+    display: block;
+    overflow: hidden;
+}
+
 .card-single {
     display: grid;
     gap: 0.81rem;
