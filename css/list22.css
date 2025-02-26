@@ -166,8 +166,8 @@ p.date {
 }
 
 .pagination a.readall,
-.pagination a.goleft,
-.pagination a.goright {
+.pagination a.go-left,
+.pagination a.go-right {
     text-decoration: none;
     cursor: pointer;
 }
@@ -193,7 +193,7 @@ a.readall {
     background: url(../images/btn_green_arrow.svg) no-repeat right 0.59rem center;
 }
 
-a.goleft {
+a.go-left {
     display: flex;
     width: 1.8125rem;
     height: 1.8125rem;
@@ -208,7 +208,7 @@ a.goleft {
     z-index: 2;
 }
 
-a.goright {
+a.go-right {
     display: flex;
     width: 1.8125rem;
     height: 1.8125rem;
@@ -253,7 +253,7 @@ a.goright {
         background: url(../images/btn_green_arrow.svg) no-repeat right 0.59rem center;
     }
 
-    a.goleft {
+    a.go-left {
         display: flex;
         width: 1.8125rem;
         height: 1.8125rem;
@@ -268,7 +268,7 @@ a.goright {
         z-index: 2;
     }
 
-    a.goright {
+    a.go-right {
         display: flex;
         width: 1.8125rem;
         height: 1.8125rem;
@@ -285,8 +285,8 @@ a.goright {
 } */
 
 /* .pagination a.readall,
-.pagination a.goleft,
-.pagination a.goright {
+.pagination a.go-left,
+.pagination a.go-right {
     text-decoration: none;
     cursor: pointer;
 } */
