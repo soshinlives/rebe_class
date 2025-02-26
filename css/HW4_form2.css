@@ -95,7 +95,7 @@ tbody tr {
     li:first-child {
         display: grid;
         grid-template-columns: 12.375rem 54.6875rem 7.625rem 7.625rem;
-        width: 91rem;
+        /* width: 91rem; */
         height: 5.8125rem;
         gap: 0.625rem;
         align-items: center;
