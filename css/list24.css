@@ -74,14 +74,55 @@ li img {
     }
 
     p.difficulty {
+        display: flex;
+        align-items: center;
         padding-top: 0.28rem;
-        width: 10.5625rem;
-        background: url(../images/like.svg) no-repeat right 0 center;
+        padding-bottom: 0.09rem;
+
+        align-self: stretch;
+        /* background-color: rgb(83, 149, 149, 0.3); */
+    }
+
+    .difficulty-text {
+        display: flex;
+        align-items: center;
         color: #000;
         font-family: "Noto Sans KR";
         font-size: 0.8125rem;
+        height: 1rem;
         font-weight: 400;
-        align-self: stretch;
+    }
+
+    .stars {
+        display: inline-block;
+        width: 4.6875rem;
+        height: 0.9375rem;
+        /* 실제 별 이미지 높이 */
+        margin-left: 0.62rem;
+        /* background: url(../images/like_3.svg) no-repeat; */
+        background-size: contain;
+        align-self: center;
+        /* flex 컨테이너 내에서 중앙 정렬 */
+        position: relative;
+        bottom: 0.09rem;
+        /* bottom: 0.03125rem; */
+        /* (1rem - 0.9375rem) / 2 = 0.03125rem, 미세 조정 */
+    }
+
+    .stars1 {
+        background: url(../images/like_3.svg) no-repeat;
+    }
+
+    .stars2 {
+        background: url(../images/like_2.svg) no-repeat;
+    }
+
+    .stars3 {
+        background: url(../images/like_4.svg) no-repeat;
+    }
+
+    .stars4 {
+        background: url(../images/like_5.svg) no-repeat;
     }
 
     p.review {
