@@ -52,6 +52,10 @@ body {
 
 .text-3xs {} */
 
+h2 {
+    margin-bottom: 6.88rem;
+}
+
 .circle {
     display: block;
     border: 0.69rem solid var(--blue100);
