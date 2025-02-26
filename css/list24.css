@@ -108,7 +108,8 @@ li img {
         /* 실제 별 이미지 높이 */
         margin-left: 0.62rem;
         /* background: url(../images/like_3.svg) no-repeat; */
-        background-size: contain;
+        /* background-size: contain; */
+        background-size: cover;
         align-self: center;
         /* flex 컨테이너 내에서 중앙 정렬 */
         position: relative;
