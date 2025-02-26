@@ -44,25 +44,25 @@ nav {
     border: 2px solid #000;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
 
     .icon-area {
-        background: url(../images/uis-triangle.svg) no-repeat center top 0;
+        background: url(../images/uis-triangle.svg) no-repeat center top 0px;
+        /* width: 0.4375rem; */
         height: 0.4375rem;
         display: grid;
         justify-self: stretch;
         align-self: center;
-        background-color: yellow;
+        /* background-color: #005BAC; */
     }
 
     .news {
         width: 1.56rem;
+        /* background-color: aqua; */
         color: #000;
         font-family: "Noto Sans KR";
         font-size: 0.5625rem;
         font-weight: 400;
-        line-height: 0.8125rem;
-        background-color: coral;
+        /* line-height: 0.8125rem; */
     }
 }
 
@@ -150,81 +150,7 @@ p.date {
     align-self: end;
 }
 
-
-/* Css 처리 2번째 */
-
 .pagination {
-    display: flex;
-    gap: 0.56rem;
-}
-
-.pagination .two-buttons {
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: -0.06rem; */
-    display: flex;
-}
-
-.pagination a.readall,
-.pagination a.goleft,
-.pagination a.goright {
-    text-decoration: none;
-    cursor: pointer;
-}
-
-a.readall {
-    width: 6.8125rem;
-    height: 1.8125rem;
-    border: 1px solid #C0C0C0;
-    justify-content: center;
-    align-items: center;
-    gap: 0.0625rem;
-    padding: 0.28rem 0.59rem;
-
-    color: #000;
-    font-family: "Noto Sans KR";
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 400;
-
-    display: flex;
-    justify-content: space-between;
-
-    background: url(../images/btn_green_arrow.svg) no-repeat right 0.59rem center;
-}
-
-a.goleft {
-    display: flex;
-    width: 1.8125rem;
-    height: 1.8125rem;
-    overflow: hidden;
-    padding: 0.5625rem 0.25rem;
-    border: 1px solid #C0C0C0;
-    justify-content: center;
-    align-items: center;
-    background-color: #005BAC;
-    background: url(../images/btn_left.svg) no-repeat center center;
-    position: relative;
-    z-index: 2;
-}
-
-a.goright {
-    display: flex;
-    width: 1.8125rem;
-    height: 1.8125rem;
-    overflow: hidden;
-    padding: 0.5625rem 0.25rem;
-    border: 1px solid #C0C0C0;
-    justify-content: center;
-    align-items: center;
-    background-color: #005BAC;
-    background: url(../images/btn_right.svg) no-repeat center center;
-    z-index: 1;
-    margin-left: -1px;
-}
-
-/* nesting 시도 */
-/* .pagination {
     display: flex;
     gap: 0.56rem;
 
@@ -265,7 +191,9 @@ a.goright {
         background-color: #005BAC;
         background: url(../images/btn_left.svg) no-repeat center center;
         position: relative;
+        /* z-index 사용을 위해 */
         z-index: 2;
+        /* 더 높은 z-index */
     }
 
     a.goright {
@@ -280,13 +208,15 @@ a.goright {
         background-color: #005BAC;
         background: url(../images/btn_right.svg) no-repeat center center;
         z-index: 1;
+        /* 더 낮은 z-index */
         margin-left: -1px;
+        /* 왼쪽 버튼과 겹치게 */
     }
-} */
+}
 
-/* .pagination a.readall,
+.pagination a.readall,
 .pagination a.goleft,
 .pagination a.goright {
     text-decoration: none;
     cursor: pointer;
-} */
+}
