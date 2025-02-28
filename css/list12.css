@@ -26,18 +26,24 @@ a {
     --box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.14);
 }
 
-ul.wrap {
-    width: 82.5rem;
+.app-list {
+    /* width: 82.5rem; */
     padding: 2.4375rem 1.25rem 2.5625rem 1.25rem;
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    border: 0.0125rem solid #eee;
+    grid-template-columns: repeat(8, 1fr);
+    /* 
+    나누는 방법2: 
+    disply:flex;
+    flex: 1;
+    gap: 3.76rem; */
+    border: 0.0125rem solid #ccc;
 }
 
-li.btn-area {
-    width: 10rem;
-    height: 9.94rem;
-    justify-self: center;
+.btn-area {
+    /* width: 10rem; */
+    /* height: 9.94rem; */
+    justify-self: stretch;
+    background-color: aqua;
 }
 
 a {
@@ -53,43 +59,44 @@ a {
     height: 100%;
 }
 
-span.image {
+.image {
     width: 6.25rem;
     height: 6.25rem;
     overflow: hidden;
     border-radius: 2.5rem;
     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.14);
+    justify-self: center;
 }
 
-span.image1 {
+.image1 {
     background: url(../images/list12/01.svg) no-repeat center center;
 }
 
-span.image2 {
+.image2 {
     background: url(../images/list12/02.svg) no-repeat center center;
 }
 
-span.image3 {
+.image3 {
     background: url(../images/list12/03.svg) no-repeat center center;
 }
 
-span.image4 {
+.image4 {
     background: url(../images/list12/04.svg) no-repeat center center;
 }
 
-span.image5 {
+.image5 {
     background: url(../images/list12/05.svg) no-repeat center center;
 }
 
-span.image6 {
+.image6 {
     background: url(../images/list12/06.svg) no-repeat center center;
 }
 
-span.image7 {
+.image7 {
     background: url(../images/list12/07.svg) no-repeat center center;
 }
 
-span.image8 {
+.image8 {
     background: url(../images/list12/08.svg) no-repeat center center;
 }
 
@@ -102,14 +109,14 @@ span.image8 {
     text-align: center;
 }
 
-p.smalltitle {
+.small-title {
     color: #666;
     font-family: "Noto Sans KR";
     font-size: 0.875rem;
     font-weight: 300;
 }
 
-p.title {
+.title {
     color: #000;
     font-family: "Noto Sans KR";
     font-size: 1.0625rem;

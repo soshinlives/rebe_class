@@ -7,10 +7,12 @@
 }
 
 html {
+    font-family: "Noto Sans KR";
     font-size: 100%;
 }
 
 body {
+    font-family: "Noto Sans KR";
     padding: 5rem;
     font-size: 100%;
 }
@@ -54,8 +56,10 @@ a {
 
 
 li img {
-    width: 18.5625rem;
+    /* width: 18.5625rem; */
+    width: 100%;
     height: 25rem;
+    /* background-color: red; */
 }
 
 .contents {
@@ -72,7 +76,7 @@ li img {
         /* border: 0.0625rem solid rgb(84, 188, 129); */
     }
 
-    p.title {
+    .title {
         color: #000;
         font-family: "Noto Sans KR";
         font-size: 0.9375rem;
@@ -82,23 +86,20 @@ li img {
         align-self: stretch;
     }
 
-    p.difficulty {
+    .difficulty {
         display: flex;
         align-items: center;
         padding-top: 0.28rem;
         padding-bottom: 0.09rem;
         align-self: stretch;
         /* background-color: rgb(83, 149, 149, 0.3); */
+        position: relative;
     }
 
     .difficulty-text {
-        display: flex;
-        align-items: center;
         color: #000;
-        font-family: "Noto Sans KR";
         font-size: 0.8125rem;
-        height: 1rem;
-        font-weight: 400;
+        line-height: 1rem;
     }
 
     .stars {
@@ -110,10 +111,10 @@ li img {
         /* background: url(../images/like_3.svg) no-repeat; */
         /* background-size: contain; */
         background-size: cover;
-        align-self: center;
         /* flex 컨테이너 내에서 중앙 정렬 */
-        position: relative;
-        bottom: 0.09rem;
+        position: absolute;
+        left: 5.0rem;
+        bottom: 0.2rem;
         /* bottom: 0.03125rem; */
         /* (1rem - 0.9375rem) / 2 = 0.03125rem, 미세 조정 */
     }
@@ -134,23 +135,21 @@ li img {
         background: url(../images/like_5.svg) no-repeat;
     }
 
-    p.review {
+    .review {
         color: #000;
-        font-family: "Noto Sans KR";
         font-size: 0.8125rem;
         line-height: 1.375rem;
-        font-weight: 400;
-        justify-self: stretch;
-        align-self: stretch;
+        /* justify-self: stretch;
+        align-self: stretch; */
+        background-color: aqua;
     }
 
-    p.price {
+    .price {
         color: #000;
-        font-family: "Noto Sans KR";
         font-size: 0.8125rem;
         line-height: 1.375rem;
-        font-weight: 400;
-        justify-self: stretch;
-        align-self: stretch;
+        /* justify-self: stretch;
+        align-self: stretch; */
+        background: aquamarine;
     }
 }

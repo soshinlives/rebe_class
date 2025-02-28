@@ -74,7 +74,7 @@ nav {
     /* background: #a0c6e7; */
 }
 
-span.bigtitle2 {
+.bigtitle2 {
     color: #000;
     font-family: "Noto Sans KR";
     font-size: 1.5rem;
@@ -99,21 +99,23 @@ span.bigtitle2 {
     height: 11.25rem;
 }
 
-span.title {
-    width: 14.8125rem;
+.title {
+    width: 100%;
     color: #222;
     font-family: "Noto Sans KR";
     font-size: 1rem;
     font-weight: 400;
     display: inline-block;
+    padding-right: 1.88rem;
 }
 
-p.date {
-    width: 14.8125rem;
+.date {
+    width: 100%;
     color: #999;
     font-family: "Noto Sans KR";
     font-size: 1rem;
     font-weight: 400;
+    padding-right: 1.88rem;
 }
 
 .content-all {
@@ -121,16 +123,17 @@ p.date {
     display: grid;
     gap: 1.56rem;
     padding: 1.44rem 0 0 1.88rem;
-    border-right: 1px solid #E0E0E0;
-    border-bottom: 1px solid #E0E0E0;
-    border-left: 1px solid #E0E0E0;
+    border: 1px solid #E0E0E0;
+    border-top: none;
 }
 
 .badge-area {
-    width: 18.0625rem;
+    width: 100%;
+    height: 2.5625rem;
     padding-top: 1.4375rem;
-    display: grid;
-    /* background-color: red; */
+    /* display: grid; */
+    background-color: rgb(234, 102, 102, 0.3);
+    position: relative;
 }
 
 .badge {
@@ -145,9 +148,12 @@ p.date {
     font-size: 0.75rem;
     font-weight: 700;
     line-height: 1.0625rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 
-    justify-self: end;
-    align-self: end;
+    /* justify-self: end;
+    align-self: end; */
 }
 
 
@@ -172,7 +178,7 @@ p.date {
     cursor: pointer;
 }
 
-a.readall {
+.readall {
     width: 6.8125rem;
     height: 1.8125rem;
     border: 1px solid #C0C0C0;
@@ -193,7 +199,7 @@ a.readall {
     background: url(../images/btn_green_arrow.svg) no-repeat right 0.59rem center;
 }
 
-a.go-left {
+.go-left {
     display: flex;
     width: 1.8125rem;
     height: 1.8125rem;
@@ -208,7 +214,7 @@ a.go-left {
     z-index: 2;
 }
 
-a.go-right {
+.go-right {
     display: flex;
     width: 1.8125rem;
     height: 1.8125rem;
